@@ -170,7 +170,7 @@ model    = "claude-3-opus"  # 以实际支持为准
 > - 一个 Key 仅绑定一个供应商分组，因此以上三个 provider 需要使用不同的 Key；
 > - 具体字段名和结构以你本地 OpenClaw 版本为准，示例仅为参考。
 <a id="other-tools"></a>
-## 在 Antingravite / Qoder / Suror 中使用 tokenfor.me（示例）
+## 在 Antigravity / Qoder / Sursor 中使用 tokenfor.me（示例）
 
 对于这些同样支持自定义大模型 API 的工具，一般可以遵循以下步骤：
 

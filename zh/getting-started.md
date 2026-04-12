@@ -45,7 +45,7 @@ outline: deep
 
 - Codex：在配置文件或启动参数中指定 Base URL 和 API Key。
 - Claude Code CLI：在配置文件或环境变量中填写 `https://api.tokenfor.me` 与 Key。
-- OpenClaw、Antingravite、Qoder、Suror：在各自的设置界面或配置文件中，将原本指向 OpenAI/Anthropic 的地址替换为 `https://api.tokenfor.me`，并使用 tokenfor.me 提供的 Key。
+- OpenClaw、Antigravity、Qoder、Sursor：在各自的设置界面或配置文件中，将原本指向 OpenAI/Anthropic 的地址替换为 `https://api.tokenfor.me`，并使用 tokenfor.me 提供的 Key。
 
 ## 第四步：发送一次测试请求
 

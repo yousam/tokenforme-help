@@ -27,6 +27,6 @@ tokenfor.me 是一款面向企业和个人开发者的 **多大模型 API 网关
 3. **在工具中配置**：
    - 将 Base URL 设置为 `https://api.tokenfor.me`；
    - 对 OpenAI / Anthropic 兼容接口使用 `/v1` 路径，对 Gemini 兼容接口使用 `/v1beta` 路径；
-   - 在 Codex、Claude Code CLI、OpenClaw、Antingravite、Qoder、Suror 等工具中填入对应的 API Key。
+   - 在 Codex、Claude Code CLI、OpenClaw、Antigravity、Qoder、Sursor 等工具中填入对应的 API Key。
 
 完成上述配置后，即可通过 tokenfor.me 在各工具中调用相应 AI 厂商的模型。后续章节将分别介绍快速开始、核心概念、控制台操作、与智能体集成、充值与结算以及故障排查等内容。

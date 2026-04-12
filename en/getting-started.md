@@ -45,7 +45,7 @@ Examples (detailed versions are in the "Integrations" chapter):
 
 - **Codex**: set `apiBase` and `apiKey` in its config file or startup options.
 - **Claude Code CLI**: set base URL and key via environment variables or config.
-- **OpenClaw / Antingravite / Qoder / Suror**: change the original OpenAI/Anthropic endpoint to `https://api.tokenfor.me` and use the tokenfor.me key.
+- **OpenClaw / Antigravity / Qoder / Sursor**: change the original OpenAI/Anthropic endpoint to `https://api.tokenfor.me` and use the tokenfor.me key.
 
 ## Step 4: Send a test request
 

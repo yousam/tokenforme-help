@@ -168,7 +168,7 @@ If you are already using OpenClaw, you can simply add three tokenfor.me provider
 > - One key per AI vendor group. The three vendors above should use three different keys.
 > - Exact field names/structure may vary with your OpenClaw version. Treat this as a reference.
 <a id="other-tools"></a>
-## Antingravite / Qoder / Suror examples
+## Antigravity / Qoder / Sursor examples
 
 For these tools, the pattern is similar:
 

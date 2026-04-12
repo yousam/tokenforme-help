@@ -27,6 +27,6 @@ With a single domain, you can integrate AI vendors such as OpenAI, Anthropic, an
 3. **Configure your agents/tools**:
    - Set the Base URL to `https://api.tokenfor.me`;
    - Use `/v1` paths for OpenAI/Anthropic-compatible APIs and `/v1beta` for Gemini-compatible APIs;
-   - In Codex, Claude Code CLI, OpenClaw, Antingravite, Qoder, Suror, and other tools, paste the corresponding API key.
+   - In Codex, Claude Code CLI, OpenClaw, Antigravity, Qoder, Sursor, and other tools, paste the corresponding API key.
 
 Once configured, your tools will call the underlying AI vendors through tokenfor.me. The following chapters cover getting started, core concepts, console usage, integrations with agents, top-up & settlement, and troubleshooting.
