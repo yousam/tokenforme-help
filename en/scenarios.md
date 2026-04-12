@@ -8,18 +8,18 @@ outline: deep
 
 This chapter walks through several typical ways individual and enterprise users may use tokenfor.me in real-world workflows.
 
-## Scenario 1: Individual developer using multiple providers
+## Scenario 1: Individual developer using multiple AI vendors
 
 **Needs:**
 
-- Use multiple providers such as OpenAI, Anthropic, and Gemini at the same time;
+- Use multiple AI vendors such as OpenAI, Anthropic, and Gemini at the same time;
 - Avoid maintaining separate base URLs and keys in every tool and project;
 - View all usage and cost in one place.
 
 **Recommended approach:**
 
 1. In the tokenfor.me console, create a personal key, e.g. `personal-dev`.
-2. Enable your preferred providers in the model routes (OpenAI, Anthropic, Gemini, etc.).
+2. Enable your preferred AI vendors in the model routes (OpenAI, Anthropic, Gemini, etc.).
 3. In all your tools (Codex, Claude Code CLI, OpenClaw, Qoder, etc.):
    - Set the Base URL to `https://api.tokenfor.me`.
    - Set the API key to `personal-dev`.
@@ -50,7 +50,7 @@ This chapter walks through several typical ways individual and enterprise users 
 **Needs:**
 
 - Multiple internal tools: coding assistants, chatbots, knowledge bases, automation scripts, etc.;
-- All tools should use a unified gateway for all LLM providers;
+- All tools should use a unified gateway for all AI vendors;
 - Unified billing, auditable usage logs, and reliable support.
 
 **Recommended approach:**

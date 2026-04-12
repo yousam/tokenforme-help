@@ -25,11 +25,11 @@ tokenfor.me 的核心定位是 **High-quality Multi-LLM API Gateway**：
   - 用于多人协作、统一管理多个成员的 Key、用量和账单；
   - 企业/集团客户通常会使用组织级别的功能。
 
-## API Key、供应商与分组（重要）
+## API Key、AI 厂商与分组（重要）
 
-- 在 tokenfor.me 中，**一个 Key 只对应一个 AI 公司（供应商）下的一个分组**（例如：OpenAI → GPT Standard）。
-- 如果你需要同时使用 Anthropic、Gemini 等其他供应商，请**分别创建新的 Key**；
-- 同一家供应商可能存在多个「分组」，不同分组代表不同的渠道体验与倍率（见下文）。
+- 在 tokenfor.me 中，**一个 Key 只对应一个 AI 厂商下的一个分组**（例如：OpenAI → GPT Standard）。
+- 如果你需要同时使用 Anthropic、Gemini 等其他 AI 厂商，请**分别创建新的 Key**；
+- 同一家 AI 厂商可能存在多个「分组」，不同分组代表不同的渠道体验与倍率（见下文）。
 
 ## 倍率（Multipliers）
 

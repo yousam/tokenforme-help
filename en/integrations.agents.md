@@ -82,7 +82,7 @@ Then, use the CLI as usual. All calls will be routed via tokenfor.me.
 
 ## Using tokenfor.me in OpenClaw (examples)
 
-OpenClaw supports separate providers for different companies. Configure each with its own key.
+OpenClaw supports separate AI vendors. Configure each with its own key.
 
 - GPT (OpenAI-compatible)
 ```json
@@ -161,7 +161,7 @@ OpenClaw supports separate providers for different companies. Configure each wit
 ```
 
 > Notes:
-> - One key per provider group. The three providers above should use three different keys.
+> - One key per AI vendor group. The three vendors above should use three different keys.
 > - Exact field names/structure may vary with your OpenClaw version. Treat this as a reference.
 ## Using tokenfor.me in Antingravite / Qoder / Suror (examples)
 

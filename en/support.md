@@ -25,7 +25,7 @@ Through these channels, you can:
 
 - Ask technical questions (e.g. how to configure tokenfor.me in a specific tool);
 - Report errors and abnormal behavior;
-- Ask about discounts, top-up methods, and billing explanations.
+- Ask about top-up methods, discounts, and billing explanations.
 
 ## Support for group / enterprise customers
 

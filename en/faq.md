@@ -62,7 +62,7 @@ Costs are based on the underlying providers' pricing rules, aggregated through t
 
 ### Are there discounts or promotions?
 
-Yes. Discounts and promotions may change over time. Please contact the channels above to get the latest information.
+Yes. Discounts and promotions may change over time. See "Top-up & Discounts" for the latest information, or contact the channels above.
 
 ## Security & permissions
 

@@ -19,7 +19,7 @@ outline: deep
 **推荐做法：**
 
 1. 在 tokenfor.me 控制台创建一个个人专用 API Key，例如 `personal-dev`；
-2. 在模型路由中启用常用的模型供应商（OpenAI、Anthropic、Gemini 等）；
+2. 在模型路由中启用常用的 AI 厂商（OpenAI、Anthropic、Gemini 等）；
 3. 在 Codex、Claude Code CLI、OpenClaw、Qoder 等所有工具中：
    - 将 Base URL 设置为 `https://api.tokenfor.me`；
    - 将 API Key 设置为 `personal-dev` 对应的 Key；
@@ -50,7 +50,7 @@ outline: deep
 **需求：**
 
 - 企业内部同时使用多种工具：代码助手、聊天机器人、内部知识库、自动化脚本等；
-- 希望所有工具都通过统一网关访问多家大模型供应商；
+- 希望所有工具都通过统一网关访问多家 AI 厂商；
 - 需要统一的账单、可审计的用量统计，以及稳定的售后支持。
 
 **推荐做法：**

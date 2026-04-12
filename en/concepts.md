@@ -12,9 +12,9 @@ This chapter explains, in practical terms, the core concepts in tokenfor.me that
 
 tokenfor.me positions itself as a **High-quality Multi-LLM API Gateway**:
 
-- A single endpoint (`https://api.tokenfor.me`) to access multiple model providers;
+- A single endpoint (`https://api.tokenfor.me`) to access multiple AI vendors;
 - Unified authentication, billing, and usage statistics;
-- Hides provider-specific differences and reduces integration overhead.
+- Hides vendor-specific differences and reduces integration overhead.
 
 For normal users, you can think of it as:
 
@@ -22,9 +22,9 @@ For normal users, you can think of it as:
 
 ## Account and Organization
 
-- **Account**: your personal login on tokenfor.me. You use it to sign into the console, manage keys, and view billing.
+- **Account**: your personal login on tokenfor.me. You use it to sign into the console, manage keys, and view usage/billing.
 - **Organization / Team** (if enabled):
-  - Used for multi-user collaboration and centralized management of keys, usage, and billing;
+  - Used for multi-user collaboration and centralized management of keys and usage;
   - Typically used by enterprise or team customers.
 
 ## API Keys / Tokens
@@ -40,15 +40,15 @@ For normal users, you can think of it as:
 
 ## Model Routing
 
-Model routing is how tokenfor.me connects you to different providers:
+Model routing is how tokenfor.me connects you to different AI vendors:
 
-- In the console, you can enable model routes from providers such as:
+- In the console, you can enable model routes per AI vendor such as:
   - OpenAI
   - Anthropic
   - Gemini
-  - Other supported providers
+  - Other supported AI vendors
 - As a normal user, you usually only need to:
-  - Enable the providers/models you want in the console;
+  - Enable the models you want in the console;
   - Use those model names in your client.
 
 ## Usage and Billing

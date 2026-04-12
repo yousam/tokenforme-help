@@ -32,32 +32,6 @@ In the **Billing** section, you can:
 
 You can export billing data or share it with your finance team as needed.
 
-## Top-up and discounts
-
-### Individual customers
-
-Individual users can top up and learn about discounts via:
-
-- WeChat: `zzbar2025`
-- QQ: `3928789892`
-
-Through these channels you can:
-
-- Ask about current top-up packages and promotions;
-- Get step-by-step guidance for online top-up;
-- Ask about balance, billing cycles, and related questions.
-
-### Group / Enterprise customers
-
-For group or enterprise customers, email is recommended for a complete top-up and billing plan:
-
-- Email: `bill@tokenfor.me`
-
-Via email you can:
-
-- Discuss enterprise-grade top-up and settlement options;
-- Negotiate custom packages and discounts;
-- Obtain formal documents required by finance / procurement.
 
 ## Cost control tips
 
