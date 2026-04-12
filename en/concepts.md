@@ -48,6 +48,7 @@ Model routing is how tokenfor.me connects you to different AI vendors:
   - Gemini
   - Other supported AI vendors
 - As a normal user, you usually only need to:
+  - Ensure the correct AI vendor group is chosen for your key;
   - Enable the models you want in the console;
   - Use those model names in your client.
 

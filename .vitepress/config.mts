@@ -44,7 +44,7 @@ export default defineConfig({
         {
           text: '充值与结算',
           items: [
-            { text: '充值与优惠', link: '/zh/topup' },
+            { text: '充值与倍率', link: '/zh/topup' },
             { text: '货币与结算', link: '/zh/console.currency-and-settlement' },
             { text: '售后与客服支持', link: '/zh/support' }
           ]
@@ -92,7 +92,7 @@ export default defineConfig({
         {
           text: 'Top-up & Settlement',
           items: [
-            { text: 'Top-up & Discounts', link: '/en/topup' },
+            { text: 'Top-up & Rates', link: '/en/topup' },
             { text: 'Currency & Settlement', link: '/en/console.currency-and-settlement' },
             { text: 'Support & Customer Service', link: '/en/support' }
           ]
