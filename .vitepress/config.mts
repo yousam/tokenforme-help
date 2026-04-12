@@ -58,12 +58,12 @@ export default defineConfig({
         {
           text: '与智能体集成',
           items: [
-            { text: '通用配置模板', link: '/zh/integrations.agents#通用配置模板' },
-            { text: 'Codex 示例', link: '/zh/integrations.agents#在-codex-中使用-tokenfor-me示例' },
-            { text: 'Claude Code CLI 示例', link: '/zh/integrations.agents#在-claude-code-cli-中使用-tokenfor-me示例' },
-            { text: 'OpenClaw 示例', link: '/zh/integrations.agents#在-openclaw-中使用-tokenfor-me示例' },
-            { text: '其他工具示例', link: '/zh/integrations.agents#在-antingravite-qoder-suror-中使用-tokenfor-me示例' },
-            { text: '调试与排错建议', link: '/zh/integrations.agents#调试与排错建议' },
+            { text: '通用配置模板', link: '/zh/integrations.agents#generic-http-template' },
+            { text: 'Codex 示例', link: '/zh/integrations.agents#codex-example' },
+            { text: 'Claude Code CLI 示例', link: '/zh/integrations.agents#claude-code-cli-example' },
+            { text: 'OpenClaw 示例', link: '/zh/integrations.agents#openclaw-examples' },
+            { text: '其他工具示例', link: '/zh/integrations.agents#other-tools' },
+            { text: '调试与排错建议', link: '/zh/integrations.agents#debugging-and-troubleshooting' },
             { text: '常见使用场景', link: '/zh/scenarios' }
           ]
         },
@@ -115,7 +115,7 @@ export default defineConfig({
             { text: 'Codex example', link: '/en/integrations.agents#codex-example' },
             { text: 'Claude Code CLI example', link: '/en/integrations.agents#claude-code-cli-example' },
             { text: 'OpenClaw examples', link: '/en/integrations.agents#openclaw-examples' },
-            { text: 'Other tools', link: '/en/integrations.agents#antingravite-qoder-suror-examples' },
+            { text: 'Other tools', link: '/en/integrations.agents#other-tools' },
             { text: 'Debugging & troubleshooting', link: '/en/integrations.agents#debugging-and-troubleshooting' },
             { text: 'Typical scenarios', link: '/en/scenarios' }
           ]

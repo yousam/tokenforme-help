@@ -18,6 +18,7 @@ This chapter explains, from a normal-user perspective, how to integrate tokenfor
 
 If a tool supports OpenAI/Anthropic-style APIs, it can usually work with tokenfor.me by changing the base URL and key.
 
+<a id="generic-http-template"></a>
 ## Generic HTTP template
 
 Most HTTP-based LLM clients follow a similar pattern:
@@ -37,6 +38,7 @@ Content-Type: application/json
 
 The following sections show how this maps to specific tools.
 
+<a id="codex-example"></a>
 ## Codex example
 
 > Example only – exact configuration may differ in your Codex version.
@@ -59,6 +61,7 @@ Steps:
 4. Save the configuration.
 5. Start a conversation in Codex; if you receive normal model responses, integration is successful.
 
+<a id="claude-code-cli-example"></a>
 ## Claude Code CLI example
 
 Assume Claude Code CLI supports environment variables or a config file.
@@ -80,6 +83,7 @@ model    = "claude-3-opus"  # use a model enabled in tokenfor.me
 
 Then, use the CLI as usual. All calls will be routed via tokenfor.me.
 
+<a id="openclaw-examples"></a>
 ## OpenClaw examples
 
 If you are already using OpenClaw, you can simply add three tokenfor.me providers (GPT, Claude, Gemini) and point their `baseUrl` to tokenfor.me, without changing your existing workflows. Configure each AI vendor with its own key.
@@ -163,6 +167,7 @@ If you are already using OpenClaw, you can simply add three tokenfor.me provider
 > Notes:
 > - One key per AI vendor group. The three vendors above should use three different keys.
 > - Exact field names/structure may vary with your OpenClaw version. Treat this as a reference.
+<a id="other-tools"></a>
 ## Antingravite / Qoder / Suror examples
 
 For these tools, the pattern is similar:
@@ -175,6 +180,7 @@ For these tools, the pattern is similar:
 
 If the tool provides a **Test Connection** button, use it to verify connectivity before heavy usage.
 
+<a id="debugging-and-troubleshooting"></a>
 ## Debugging and troubleshooting
 
 - **Authentication errors**:

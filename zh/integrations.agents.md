@@ -18,6 +18,7 @@ outline: deep
 
 只要工具支持 OpenAI/Anthropic 风格的 API，一般都可以通过修改 Base URL 和 Key 的方式接入 tokenfor.me。
 
+<a id="generic-http-template"></a>
 ## 通用配置模板
 
 在绝大多数支持 HTTP 调用的大模型客户端中，配置思路类似：
@@ -39,6 +40,7 @@ Content-Type: application/json
 
 后续各工具的配置示例都可以类比上述结构进行理解。
 
+<a id="codex-example"></a>
 ## 在 Codex 中使用 tokenfor.me（示例）
 
 > 以下为示意性示例，具体配置方式以 Codex 当前版本文档为准。
@@ -61,6 +63,7 @@ Content-Type: application/json
 4. 保存配置后，在 Codex 中发起一次对话测试；
 5. 如果可以正常获得模型回复，则说明集成成功。
 
+<a id="claude-code-cli-example"></a>
 ## 在 Claude Code CLI 中使用 tokenfor.me（示例）
 
 假设 Claude Code CLI 支持通过环境变量或配置文件指定 API 地址和 Key：
@@ -82,6 +85,7 @@ model    = "claude-3-opus"  # 以实际支持为准
 
 然后在命令行中直接使用 Claude Code CLI，即可通过 tokenfor.me 访问相应模型。
 
+<a id="openclaw-examples"></a>
 ## 在 OpenClaw 中使用 tokenfor.me（示例）
 
 对于已经使用 OpenClaw 的用户，只需要在配置文件中新增三个 AI 厂商的 provider（GPT / Claude / Gemini），并将 `baseUrl` 指向 tokenfor.me 提供的地址，即可复用原有工作流。以下为三个示例（请按需分配不同 Key）：
@@ -165,6 +169,7 @@ model    = "claude-3-opus"  # 以实际支持为准
 > 提示：
 > - 一个 Key 仅绑定一个供应商分组，因此以上三个 provider 需要使用不同的 Key；
 > - 具体字段名和结构以你本地 OpenClaw 版本为准，示例仅为参考。
+<a id="other-tools"></a>
 ## 在 Antingravite / Qoder / Suror 中使用 tokenfor.me（示例）
 
 对于这些同样支持自定义大模型 API 的工具，一般可以遵循以下步骤：
@@ -177,6 +182,7 @@ model    = "claude-3-opus"  # 以实际支持为准
 
 如果工具支持测试按钮（Test Connection），建议先点击测试，确认连接成功后再大规模使用。
 
+<a id="debugging-and-troubleshooting"></a>
 ## 调试与排错建议
 
 - 若出现「认证失败」类错误：
