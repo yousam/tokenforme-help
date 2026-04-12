@@ -56,9 +56,14 @@ export default defineConfig({
           ]
         },
         {
-          text: '集成与场景',
+          text: '与智能体集成',
           items: [
-            { text: '与智能体集成', link: '/zh/integrations.agents' },
+            { text: '通用配置模板', link: '/zh/integrations.agents#通用配置模板' },
+            { text: 'Codex 示例', link: '/zh/integrations.agents#在-codex-中使用-tokenfor-me示例' },
+            { text: 'Claude Code CLI 示例', link: '/zh/integrations.agents#在-claude-code-cli-中使用-tokenfor-me示例' },
+            { text: 'OpenClaw 示例', link: '/zh/integrations.agents#在-openclaw-中使用-tokenfor-me示例' },
+            { text: '其他工具示例', link: '/zh/integrations.agents#在-antingravite-qoder-suror-中使用-tokenfor-me示例' },
+            { text: '调试与排错建议', link: '/zh/integrations.agents#调试与排错建议' },
             { text: '常见使用场景', link: '/zh/scenarios' }
           ]
         },
@@ -104,10 +109,15 @@ export default defineConfig({
           ]
         },
         {
-          text: 'Integrations & Scenarios',
+          text: 'Integrations',
           items: [
-            { text: 'Integrations with Agents', link: '/en/integrations.agents' },
-            { text: 'Typical Scenarios', link: '/en/scenarios' }
+            { text: 'Generic HTTP template', link: '/en/integrations.agents#generic-http-template' },
+            { text: 'Codex example', link: '/en/integrations.agents#codex-example' },
+            { text: 'Claude Code CLI example', link: '/en/integrations.agents#claude-code-cli-example' },
+            { text: 'OpenClaw examples', link: '/en/integrations.agents#openclaw-examples' },
+            { text: 'Other tools', link: '/en/integrations.agents#antingravite-qoder-suror-examples' },
+            { text: 'Debugging & troubleshooting', link: '/en/integrations.agents#debugging-and-troubleshooting' },
+            { text: 'Typical scenarios', link: '/en/scenarios' }
           ]
         },
         {
