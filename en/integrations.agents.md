@@ -82,7 +82,7 @@ Then, use the CLI as usual. All calls will be routed via tokenfor.me.
 
 ## Using tokenfor.me in OpenClaw (examples)
 
-OpenClaw supports separate AI vendors. Configure each with its own key.
+If you are already using OpenClaw, you can simply add three tokenfor.me providers (GPT, Claude, Gemini) and point their `baseUrl` to tokenfor.me, without changing your existing workflows. Configure each AI vendor with its own key.
 
 - GPT (OpenAI-compatible)
 ```json

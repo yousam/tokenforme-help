@@ -6,7 +6,7 @@ outline: deep
 
 # Top-up & Rates
 
-This page centralizes top-up channels and rate/discount information for both individuals and enterprises.
+This page centralizes top-up channels and rate/discount information for both individuals and enterprises, so you can quickly find the right way to recharge and adjust your rates.
 
 ## Individual customers
 
@@ -14,7 +14,7 @@ This page centralizes top-up channels and rate/discount information for both ind
 - QQ: `3928789892`
 
 Use these channels to:
-- Learn about current top-up packages and corresponding rates (e.g. a 0.9x rate means 10% off);
+- Learn about current top-up packages and corresponding rates (e.g. a `0.9x rate` means 10% off the standard price);
 - Get step-by-step guidance for online top-up;
 - Ask about balance, billing cycles, and related questions.
 

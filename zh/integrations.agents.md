@@ -84,7 +84,7 @@ model    = "claude-3-opus"  # 以实际支持为准
 
 ## 在 OpenClaw 中使用 tokenfor.me（示例）
 
-OpenClaw 支持为不同供应商配置独立的 provider。以下为三个常见示例（请按需分配不同 Key）：
+对于已经使用 OpenClaw 的用户，只需要在配置文件中新增三个 AI 厂商的 provider（GPT / Claude / Gemini），并将 `baseUrl` 指向 tokenfor.me 提供的地址，即可复用原有工作流。以下为三个示例（请按需分配不同 Key）：
 
 - GPT（OpenAI 兼容）
 ```json
