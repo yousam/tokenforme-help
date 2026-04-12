@@ -24,18 +24,12 @@ Once signed in, you will see the console home page. All subsequent operations ar
 
 ## Step 2: Create an API Key
 
-1. In the left-hand navigation, go to **API / Keys** (exact naming may differ slightly).
-2. Click **Create API Key** or similar.
-3. Fill in basic information:
-   - **Name**: e.g. `my-first-key`.
-   - **Description** (optional): e.g. "personal testing", "backend service", etc.
-4. Choose or configure the model routes you need, for example:
-   - OpenAI
-   - Anthropic
-   - Gemini
-   - Other supported providers
-5. Save to generate a new API key and keep it in a safe place.
-
+1. In the left-hand navigation, go to **API Keys**.
+2. Click **Create API Key**.
+3. Fill in the following fields (actual UI may differ slightly):
+   - **Name**: e.g. `personal-dev`, `backend-service`.
+   - **Group (rate)**: e.g. `GPT Standard` (each group belongs to one AI vendor).
+4. Save to generate an API key and keep it in a safe place.
 > Tips:
 > - For personal use, create a dedicated key just for yourself.
 > - For teams, create different keys for different projects or members.

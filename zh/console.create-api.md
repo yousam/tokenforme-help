@@ -14,10 +14,9 @@ outline: deep
 2. 在左侧菜单进入「API 密钥」。
 3. 点击「创建 API Key」。
 4. 填写以下信息（以实际界面为准）：
-   - 名称与备注：如 `personal-dev`、`backend-service`；
+   - 名称：如 `personal-dev`、`backend-service`；
    - 分组（倍率）：如「GPT Standard」等（每个分组隶属于某个 AI 厂商）；
-5. 确认创建后，系统会生成一个新的 API Key，请妥善保存。
-
+5. 确认保存后，系统会生成一个新的 API Key，请妥善保管。
 > 重要规则：
 > - **一个 Key 只对应一个 AI 厂商的一个分组**；
 > - 如果你需要同时使用多家 AI 厂商或同一 AI 厂商下的不同分组，请「分别创建新的 Key」。

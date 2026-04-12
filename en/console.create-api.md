@@ -12,12 +12,11 @@ This chapter explains how to create, view, and manage API keys in the tokenfor.m
 
 1. Sign in to the console at `https://tokenfor.me`.
 2. In the left sidebar, open **API Keys**.
-3. Click **Create API Key** (or similar).
+3. Click **Create API Key**.
 4. Fill in the following fields (actual UI may differ slightly):
-   - **Name**: e.g. `personal-dev`, `team-project-A`.
-   - **Description** (optional): e.g. "personal testing", "backend service", etc.
-   - **Group** (channel): e.g. "GPT Standard" (each group belongs to one AI vendor).
-5. Confirm to generate the new API key.
+   - **Name**: e.g. `personal-dev`, `backend-service`.
+   - **Group (rate)**: e.g. `GPT Standard` (each group belongs to one AI vendor).
+5. Confirm and save. The system will generate a new API key; keep it in a safe place.
 
 > Notes:
 > - One key is bound to **one group of one AI vendor**.

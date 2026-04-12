@@ -29,5 +29,5 @@ Via email you can:
 
 > Related info:
 > - For settlement currency, reconciliation, and price consistency, see "Currency & Settlement".
-> - Each group has a unique rate representing the discount level for that channel; in general, a higher rate also implies a higher quality route.
+> - Each group has a unique rate representing the discount level for that group; in general, a higher rate also implies a higher quality route.
 > - For after-sales support channels, see "Support & Customer Service".
