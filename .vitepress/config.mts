@@ -34,11 +34,11 @@ export default defineConfig({
           ]
         },
         {
-          text: '控制台',
+          text: '控制台（Console）',
           items: [
-            { text: '控制台总览', link: '/zh/console.overview' },
-            { text: '创建与管理 API', link: '/zh/console.create-api' },
-            { text: '使用情况与账单', link: '/zh/console.usage-and-billing' }
+            { text: '仪表盘（Dashboard）', link: '/zh/console.overview' },
+            { text: 'API 密钥（API Keys）', link: '/zh/console.create-api' },
+            { text: '使用记录（Usage）', link: '/zh/console.usage-and-billing' }
           ]
         },
         {
@@ -70,9 +70,9 @@ export default defineConfig({
         {
           text: 'Console',
           items: [
-            { text: 'Console Overview', link: '/en/console.overview' },
-            { text: 'Creating & Managing APIs', link: '/en/console.create-api' },
-            { text: 'Usage & Billing', link: '/en/console.usage-and-billing' }
+            { text: 'Dashboard', link: '/en/console.overview' },
+            { text: 'API Keys', link: '/en/console.create-api' },
+            { text: 'Usage', link: '/en/console.usage-and-billing' }
           ]
         },
         {

@@ -10,8 +10,11 @@ outline: deep
 
 **统一规则：**
 
-- Base URL / Endpoint 固定为：`https://api.tokenfor.me`
-- API Key / Token：在 tokenfor.me 控制台中创建并复制的 Key
+- 基础域名：`https://api.tokenfor.me`
+- 常用路径：
+  - OpenAI / Anthropic 兼容接口：`/v1`
+  - Gemini 兼容接口：`/v1beta`
+- API Key / Token：在 tokenfor.me 控制台中创建并复制的 Key（一个 Key 绑定一个供应商的一个分组）
 
 只要工具支持 OpenAI/Anthropic 风格的 API，一般都可以通过修改 Base URL 和 Key 的方式接入 tokenfor.me。
 
@@ -81,24 +84,87 @@ model    = "claude-3-opus"  # 以实际支持为准
 
 ## 在 OpenClaw 中使用 tokenfor.me（示例）
 
-在 OpenClaw 中，一般可以在配置文件或环境变量中指定大模型网关：
+OpenClaw 支持为不同供应商配置独立的 provider。以下为三个常见示例（请按需分配不同 Key）：
 
-- 将原本的 OpenAI/Anthropic API 地址改为：`https://api.tokenfor.me`；
-- 将对应的 API Key 改为 tokenfor.me 控制台中生成的 Key；
-- 在模型配置部分，选择在 tokenfor.me 中已启用的模型名称。
-
-示意配置（具体字段名以 OpenClaw 文档为准）：
-
+- GPT（OpenAI 兼容）
 ```json
 {
-  "llm": {
-    "base_url": "https://api.tokenfor.me",
-    "api_key": "你的_API_Key",
-    "model": "gpt-4"
+  "models": {
+    "providers": {
+      "tokenforme-gpt": {
+        "baseUrl": "https://api.tokenfor.me/v1",
+        "apiKey": "sk-your-key",
+        "models": [
+          {
+            "id": "gpt-5",
+            "name": "gpt-5",
+            "api": "openai-responses",
+            "reasoning": true,
+            "input": ["text"]
+          }
+        ]
+      }
+    }
   }
 }
 ```
 
+- Claude（Anthropic 兼容）
+```json
+{
+  "models": {
+    "providers": {
+      "tokenforme-claude": {
+        "baseUrl": "https://api.tokenfor.me/v1",
+        "apiKey": "sk-your-key",
+        "models": [
+          {
+            "id": "claude-sonnet-4-6",
+            "name": "claude-sonnet-4-6",
+            "api": "anthropic-messages",
+            "reasoning": true,
+            "input": ["text"]
+          }
+        ]
+      }
+    }
+  }
+}
+```
+
+- Gemini（Google Generative AI 兼容）
+```json
+{
+  "models": {
+    "providers": {
+      "tokenforme-gemini": {
+        "baseUrl": "https://api.tokenfor.me/v1beta",
+        "apiKey": "sk-your-key",
+        "api": "google-generative-ai",
+        "models": [
+          {
+            "id": "gemini-3.1-flash-image-preview",
+            "name": "gemini-3.1-flash-image-preview",
+            "api": "google-generative-ai",
+            "reasoning": false,
+            "input": ["text", "image"]
+          }
+        ],
+        "authHeader": true,
+        "request": {
+          "headers": {
+            "Authorization": "Bearer ${models.providers.tokenforme-gemini.apiKey}"
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+> 提示：
+> - 一个 Key 仅绑定一个供应商分组，因此以上三个 provider 需要使用不同的 Key；
+> - 具体字段名和结构以你本地 OpenClaw 版本为准，示例仅为参考。
 ## 在 Antingravite / Qoder / Suror 中使用 tokenfor.me（示例）
 
 对于这些同样支持自定义大模型 API 的工具，一般可以遵循以下步骤：

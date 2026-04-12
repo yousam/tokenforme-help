@@ -34,10 +34,9 @@ Check the following in order:
 
 If the problem persists, capture the error message and contact support.
 
-### Can I use OpenAI, Anthropic, and Gemini at the same time?
+### Can one key use OpenAI, Anthropic, and Gemini at the same time?
 
-Yes. As long as you have enabled the corresponding providers and models in the model routes for your key, you can call them all through the single endpoint `https://api.tokenfor.me`.
-
+No. **One key is bound to one provider (company) and one group.** If you need multiple providers or groups, create separate keys and configure each tool with the corresponding key.
 ### How do I choose and set the model name?
 
 - In many cases, you can use familiar names like `gpt-4`, `claude-3-opus`, `gemini-1.5-pro`, etc.

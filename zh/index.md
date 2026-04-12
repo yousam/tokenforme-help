@@ -10,7 +10,9 @@ outline: deep
 
 tokenfor.me 是一款 **High-quality Multi-LLM API Gateway**，面向企业内部用户和个人开发者，提供统一、稳定、高可用的多大模型 API 网关服务。
 
-通过一个统一入口，你可以便捷地访问包括 OpenAI、Anthropic、Gemini 等在内的多个大模型服务，简化配置、统一鉴权、集中查看用量和账单。
+通过统一域名接入多个模型供应商（如 OpenAI、Anthropic、Gemini），实现统一配置、统一鉴权与集中用量/账单管理。
+
+> 提示：**一个 Key 仅绑定一个供应商的一个分组**；如需使用其他供应商/分组，请分别创建新的 Key。
 
 ## 适用人群
 

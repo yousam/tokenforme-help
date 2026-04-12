@@ -10,8 +10,11 @@ This chapter explains, from a normal-user perspective, how to integrate tokenfor
 
 **Universal rule:**
 
-- **Base URL / Endpoint**: `https://api.tokenfor.me`
-- **API Key / Token**: a key created in the tokenfor.me console
+- Base host: `https://api.tokenfor.me`
+- Common paths:
+  - OpenAI / Anthropic compatible APIs: `/v1`
+  - Gemini compatible APIs: `/v1beta`
+- **API Key / Token**: a key created in the tokenfor.me console (one key per provider group)
 
 If a tool supports OpenAI/Anthropic-style APIs, it can usually work with tokenfor.me by changing the base URL and key.
 
@@ -77,30 +80,89 @@ model    = "claude-3-opus"  # use a model enabled in tokenfor.me
 
 Then, use the CLI as usual. All calls will be routed via tokenfor.me.
 
-## Using tokenfor.me in OpenClaw (example)
+## Using tokenfor.me in OpenClaw (examples)
 
-In OpenClaw, you can typically configure the LLM gateway via a config file or environment variables.
+OpenClaw supports separate providers for different companies. Configure each with its own key.
 
-Example JSON snippet:
-
+- GPT (OpenAI-compatible)
 ```json
 {
-  "llm": {
-    "base_url": "https://api.tokenfor.me",
-    "api_key": "YOUR_API_KEY",
-    "model": "gpt-4"
+  "models": {
+    "providers": {
+      "tokenforme-gpt": {
+        "baseUrl": "https://api.tokenfor.me/v1",
+        "apiKey": "sk-your-key",
+        "models": [
+          {
+            "id": "gpt-5",
+            "name": "gpt-5",
+            "api": "openai-responses",
+            "reasoning": true,
+            "input": ["text"]
+          }
+        ]
+      }
+    }
   }
 }
 ```
 
-Steps:
+- Claude (Anthropic-compatible)
+```json
+{
+  "models": {
+    "providers": {
+      "tokenforme-claude": {
+        "baseUrl": "https://api.tokenfor.me/v1",
+        "apiKey": "sk-your-key",
+        "models": [
+          {
+            "id": "claude-sonnet-4-6",
+            "name": "claude-sonnet-4-6",
+            "api": "anthropic-messages",
+            "reasoning": true,
+            "input": ["text"]
+          }
+        ]
+      }
+    }
+  }
+}
+```
 
-1. Open your OpenClaw configuration.
-2. Replace the original OpenAI/Anthropic base URL with `https://api.tokenfor.me`.
-3. Set `api_key` to your tokenfor.me key.
-4. Choose a model name that is enabled for your key.
-5. Restart or reload OpenClaw if necessary and run a test prompt.
+- Gemini (Google Generative AI-compatible)
+```json
+{
+  "models": {
+    "providers": {
+      "tokenforme-gemini": {
+        "baseUrl": "https://api.tokenfor.me/v1beta",
+        "apiKey": "sk-your-key",
+        "api": "google-generative-ai",
+        "models": [
+          {
+            "id": "gemini-3.1-flash-image-preview",
+            "name": "gemini-3.1-flash-image-preview",
+            "api": "google-generative-ai",
+            "reasoning": false,
+            "input": ["text", "image"]
+          }
+        ],
+        "authHeader": true,
+        "request": {
+          "headers": {
+            "Authorization": "Bearer ${models.providers.tokenforme-gemini.apiKey}"
+          }
+        }
+      }
+    }
+  }
+}
+```
 
+> Notes:
+> - One key per provider group. The three providers above should use three different keys.
+> - Exact field names/structure may vary with your OpenClaw version. Treat this as a reference.
 ## Using tokenfor.me in Antingravite / Qoder / Suror (examples)
 
 For these tools, the pattern is similar:

@@ -44,8 +44,8 @@ Once signed in, you will see the console home page. All subsequent operations ar
 
 Most clients that support OpenAI/Anthropic-style APIs can be configured in the same way:
 
-- Set **Base URL / Endpoint** to: `https://api.tokenfor.me`
-- Set **API Key / Token** to: the key you created in the console
+- Set **Base URL / Endpoint** to: `https://api.tokenfor.me` (OpenAI/Anthropic typically use `/v1`, Gemini uses `/v1beta`)
+- Set **API Key / Token** to: the key you created in the console (one key per provider group)
 
 Examples (detailed versions are in the "Integrations" chapter):
 

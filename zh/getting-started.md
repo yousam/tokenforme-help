@@ -42,8 +42,8 @@ outline: deep
 
 以通用配置方式为例，绝大多数支持 OpenAI/Anthropic 风格 API 的智能体，配置方式类似：
 
-- 将 Base URL / Endpoint 设置为：`https://api.tokenfor.me`
-- 将 API Key / Token 设置为：你刚刚在控制台创建的 Key
+- 将 Base URL / Endpoint 设置为：`https://api.tokenfor.me`（OpenAI/Anthropic 通常使用 `/v1` 路径，Gemini 使用 `/v1beta`）
+- 将 API Key / Token 设置为：你刚刚在控制台创建的 Key（一个 Key 绑定一个供应商分组）
 
 以下是几个常见工具的示意说明（后续「与智能体集成」章节会给出更详细示例）：
 

@@ -10,7 +10,7 @@ outline: deep
 
 tokenfor.me is a **High-quality Multi-LLM API Gateway** designed for internal enterprise users and individual developers. It provides a unified, stable, and high-availability gateway to multiple large language model providers.
 
-Through a single unified endpoint, you can easily access multiple model providers such as OpenAI, Anthropic, and Gemini, with unified configuration, authentication, usage tracking, and billing.
+Through a single unified domain, you can integrate multiple model providers (e.g., OpenAI, Anthropic, Gemini) with unified configuration, authentication, usage tracking, and billing. Note: a single key is bound to one provider group; create additional keys for additional providers/groups.
 
 ## Who is it for?
 

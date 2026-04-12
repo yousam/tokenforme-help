@@ -15,14 +15,16 @@ This chapter introduces the structure of the tokenfor.me Web console so you can 
 After signing in to `https://tokenfor.me`, you will typically see:
 
 - A **top bar** with account information, language switch, notifications, and sign-out.
-- A **sidebar** with functional modules such as:
+- A **sidebar** with the following items (current menu):
   - Dashboard
-  - API / Keys
+  - API Keys
   - Usage
-  - Billing
-  - Account & Security
-  - Support / Help
+  - My Subscriptions
+  - Redeem
+  - Profile
 
+> In this documentation we currently focus on **Dashboard / API Keys / Usage**.
+> "My Subscriptions" and "Redeem" can be documented later if needed.
 ## Dashboard
 
 The dashboard gives you a high-level view of your account, such as:
