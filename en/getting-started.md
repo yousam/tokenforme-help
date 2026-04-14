@@ -38,14 +38,14 @@ Once signed in, you will see the console home page. All subsequent operations ar
 
 Most clients that support OpenAI/Anthropic-style APIs can be configured in the same way:
 
-- Set **Base URL / Endpoint** to: `https://api.tokenfor.me` (OpenAI/Anthropic typically use `/v1`, Gemini uses `/v1beta`)
+- Set **Base URL / Endpoint** according to the "API base URLs" section under "API Keys". For most users this means choosing the regional endpoint described there, and then appending `/v1` (OpenAI/Anthropic-compatible) or `/v1beta` (Gemini-compatible) as needed.
 - Set **API Key / Token** to: the key you created in the console (one key per provider group)
 
 Examples (detailed versions are in the "Integrations" chapter):
 
 - **Codex**: set `apiBase` and `apiKey` in its config file or startup options.
-- **Claude Code CLI**: set base URL and key via environment variables or config.
-- **OpenClaw / Antigravity / Qoder / Sursor**: change the original OpenAI/Anthropic endpoint to `https://api.tokenfor.me` and use the tokenfor.me key.
+- **Claude Code CLI**: set base URL and key via environment variables or config, using the endpoint from the "API base URLs" section under "API Keys".
+- **OpenClaw / Antigravity / Qoder / Sursor**: change the original OpenAI/Anthropic endpoint to the API base URL configured as described under "API base URLs", and use the tokenfor.me key.
 
 ## Step 4: Send a test request
 

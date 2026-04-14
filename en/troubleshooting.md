@@ -13,7 +13,7 @@ This chapter lists common error symptoms and step-by-step checks you can perform
 When something goes wrong, first verify the following:
 
 1. **Is the Base URL correct?**
-   - It must be: `https://api.tokenfor.me`
+   - See the "API base URLs" section under "API Keys" and verify that your client is using the correct endpoint for your region.
 2. **Is your API key valid?**
    - Did you copy it completely, with no extra spaces or missing characters?
    - Is the key still enabled and not deleted in the console?
@@ -36,7 +36,7 @@ When something goes wrong, first verify the following:
 
 **How to debug:**
 
-1. Verify that the Base URL is `https://api.tokenfor.me`.
+1. Verify that the Base URL matches the value described in the "API base URLs" section under "API Keys".
 2. In the **API / Keys** section of the console, check:
    - The key is enabled;
    - It has not expired or been disabled by an admin.
@@ -52,7 +52,7 @@ When something goes wrong, first verify the following:
 
 **How to debug:**
 
-1. Try opening `https://api.tokenfor.me` in a browser to see if it is reachable.
+1. Try opening the API base URL you configured (see "API base URLs" under "API Keys") in a browser to see if it is reachable.
 2. Check local or server-side proxy settings and firewall rules.
 3. In corporate environments, verify that Internet access to external APIs is allowed.
 4. Test from another network (for example, a mobile hotspot) to rule out local network issues.

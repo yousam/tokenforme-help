@@ -13,7 +13,7 @@ outline: deep
 **需求：**
 
 - 同时使用 OpenAI、Anthropic、Gemini 等多家大模型；
-- 不想在每个智能体或项目中分别维护不同的 Base URL 和 Key；
+- 不想在每个智能体或项目中分别维护不同的 API 地址（Base URL）和 Key；
 - 希望有一个地方统一查看用量和费用。
 
 **推荐做法：**
@@ -21,7 +21,7 @@ outline: deep
 1. 在 tokenfor.me 控制台创建一个个人专用 API Key，例如 `personal-dev`；
 2. 在模型路由中启用常用的 AI 厂商（OpenAI、Anthropic、Gemini 等）；
 3. 在 Codex、Claude Code CLI、OpenClaw、Qoder 等所有工具中：
-   - 将 Base URL 设置为 `https://api.tokenfor.me`；
+   - 按照「API 密钥」章节中「API 地址」小节的说明，设置 API 地址（Base URL），为所在区域选择正确的调用域名；
    - 将 API Key 设置为 `personal-dev` 对应的 Key；
 4. 在「使用情况 / Usage」中即可看到个人全部调用的汇总，用于估算成本和调整使用习惯。
 
@@ -41,7 +41,7 @@ outline: deep
    - `member-alice`
    - `member-bob`
 2. 为每个 Key 配置合适的模型路由，并根据需要设置限额（如有此功能）；
-3. 将对应 Key 分发给团队成员，指导其在各自的工具中统一配置 `https://api.tokenfor.me` + 专属 Key；
+3. 将对应 Key 分发给团队成员，指导其在各自的工具中统一配置「API 密钥」章节中「API 地址」小节所示的调用域名 + 专属 Key；
 4. 定期在「使用情况 / Usage」和「账单 / Billing」中查看各 Key 的用量，评估不同项目或成员的成本；
 5. 根据用量情况调整 Key 的权限、限额或路由策略。
 
@@ -59,7 +59,7 @@ outline: deep
 2. 由企业内部平台或运维团队在 tokenfor.me 中：
    - 创建面向不同业务线或系统的 API Key；
    - 为关键业务配置更高稳定性和特定模型路由策略；
-3. 统一将内部各工具（如 OpenClaw 实例、内部机器人、CI/CD 脚本等）的 Base URL 配置为 `https://api.tokenfor.me`，并使用对应业务 Key；
+3. 统一将内部各工具（如 OpenClaw 实例、内部机器人、CI/CD 脚本等）的 API 地址（Base URL）配置为「API 密钥」章节中「API 地址」小节所示的调用域名，并使用对应业务 Key；
 4. 定期导出用量和账单，与企业内部的成本中心或财务系统对接；
 5. 遇到问题时，通过企业级售后支持渠道快速沟通和排查。
 
@@ -74,7 +74,7 @@ outline: deep
 
 1. 为活动创建一个专用 API Key，例如 `event-2026-hackathon`；
 2. 为活动参与者提供统一的接入说明：
-   - Base URL：`https://api.tokenfor.me`
+   - API 地址（Base URL）：参考「API 密钥」章节中「API 地址」小节所示的调用域名；
    - API Key：`event-2026-hackathon` 对应的 Key（可视需要设置限额或时间段）；
 3. 活动期间通过「使用情况 / Usage」实时监控调用情况；
 4. 活动结束后禁用或删除该 Key，完成收尾；

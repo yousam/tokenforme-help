@@ -12,7 +12,7 @@ outline: deep
 
 tokenfor.me 的核心定位是 **High-quality Multi-LLM API Gateway**：
 
-- 通过一个统一域名（`https://api.tokenfor.me`）接入多家大模型服务；
+- 通过一个统一域名（参考「API 密钥」章节中的「API 地址」配置）接入多家大模型服务；
 - 统一鉴权、统一计费和用量统计；
 - 屏蔽不同厂商之间的细节差异，减少重复配置和适配成本。
 
@@ -34,7 +34,7 @@ tokenfor.me 的核心定位是 **High-quality Multi-LLM API Gateway**：
 
 ## 使用情况与账单
 
-- 每一次通过 `https://api.tokenfor.me` 发起的调用都会被记录；
+- 每一次通过「API 地址」发起的调用都会被记录（具体地址参考「API 密钥」章节中的「API 地址」配置）；
 - 控制台提供用量统计与账单视图，用于查看：
   - 调用次数 / tokens / 费用估算；
   - 不同 Key 的用量分布；

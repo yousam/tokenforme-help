@@ -10,7 +10,7 @@ This chapter explains, from a normal-user perspective, how to integrate tokenfor
 
 **Universal rule:**
 
-- Base host: `https://api.tokenfor.me`
+- Base host: see the "API base URLs" section under "API Keys"
 - Common paths:
   - OpenAI / Anthropic compatible APIs: `/v1`
   - Gemini compatible APIs: `/v1beta`
@@ -24,7 +24,7 @@ If a tool supports OpenAI/Anthropic-style APIs, it can usually work with tokenfo
 Most HTTP-based LLM clients follow a similar pattern:
 
 ```http
-POST https://api.tokenfor.me/v1/chat/completions
+POST <API_BASE_URL>/v1/chat/completions  # see "API base URLs" under "API Keys" for the actual endpoint
 Authorization: Bearer <YOUR_API_KEY>
 Content-Type: application/json
 
@@ -47,7 +47,7 @@ Assume Codex reads configuration from a `config.json` file:
 
 ```json
 {
-  "apiBase": "https://api.tokenfor.me",
+  "apiBase": "<API_BASE_URL>",  // see "API base URLs" under "API Keys" for the actual endpoint
   "apiKey": "YOUR_API_KEY",
   "model": "gpt-4"
 }
@@ -56,7 +56,7 @@ Assume Codex reads configuration from a `config.json` file:
 Steps:
 
 1. Open Codex's config file or settings UI.
-2. Change the original OpenAI `apiBase` to `https://api.tokenfor.me`.
+2. Change the original OpenAI `apiBase` to the endpoint described in the "API base URLs" section under "API Keys".
 3. Set `apiKey` to the key you created in tokenfor.me.
 4. Save the configuration.
 5. Start a conversation in Codex; if you receive normal model responses, integration is successful.
@@ -69,14 +69,14 @@ Assume Claude Code CLI supports environment variables or a config file.
 - **Environment variable** example:
 
 ```bash
-export CLAUDE_API_BASE="https://api.tokenfor.me"
+export CLAUDE_API_BASE="<API_BASE_URL>"  # see "API base URLs" under "API Keys"
 export CLAUDE_API_KEY="YOUR_API_KEY"
 ```
 
 - **Config file** example (`config.toml`):
 
 ```toml
-api_base = "https://api.tokenfor.me"
+api_base = "<API_BASE_URL>"  # see "API base URLs" under "API Keys"
 api_key  = "YOUR_API_KEY"
 model    = "claude-3-opus"  # use a model enabled in tokenfor.me
 ```
@@ -94,7 +94,7 @@ If you are already using OpenClaw, you can simply add three tokenfor.me provider
   "models": {
     "providers": {
       "tokenforme-gpt": {
-        "baseUrl": "https://api.tokenfor.me/v1",
+        "baseUrl": "<API_BASE_URL>/v1",  // see "API base URLs" under "API Keys" for the actual endpoint
         "apiKey": "sk-your-key",
         "models": [
           {
@@ -117,7 +117,7 @@ If you are already using OpenClaw, you can simply add three tokenfor.me provider
   "models": {
     "providers": {
       "tokenforme-claude": {
-        "baseUrl": "https://api.tokenfor.me/v1",
+        "baseUrl": "<API_BASE_URL>/v1",  // see "API base URLs" under "API Keys" for the actual endpoint
         "apiKey": "sk-your-key",
         "models": [
           {
@@ -140,7 +140,7 @@ If you are already using OpenClaw, you can simply add three tokenfor.me provider
   "models": {
     "providers": {
       "tokenforme-gemini": {
-        "baseUrl": "https://api.tokenfor.me/v1beta",
+        "baseUrl": "<API_BASE_URL>/v1beta",  // see "API base URLs" under "API Keys" for the actual endpoint
         "apiKey": "sk-your-key",
         "api": "google-generative-ai",
         "models": [
@@ -173,7 +173,7 @@ If you are already using OpenClaw, you can simply add three tokenfor.me provider
 For these tools, the pattern is similar:
 
 1. Open the settings panel for **Models** or **API**.
-2. Set the base URL or endpoint to `https://api.tokenfor.me`.
+2. Set the base URL or endpoint to the API base URL configured as described under "API base URLs".
 3. Paste your tokenfor.me API key into the key/token field.
 4. Select or type a model name that is enabled in tokenfor.me.
 5. Save and run a simple test message.
@@ -186,7 +186,7 @@ If the tool provides a **Test Connection** button, use it to verify connectivity
 - **Authentication errors**:
   - Double-check your API key and ensure the key is enabled in the console.
 - **Connection or timeout issues**:
-  - Make sure the base URL is exactly `https://api.tokenfor.me`.
+  - Make sure the base URL matches the endpoint described in the "API base URLs" section under "API Keys".
   - Check local network and proxy/firewall settings.
 - **Model not found**:
   - Confirm the model is enabled for your key in tokenfor.me.

@@ -8,6 +8,10 @@ outline: deep
 
 This chapter explains how to create, view, and manage API keys in the tokenfor.me console, and how to configure model routes for each key.
 
+## API base URLs
+
+For the actual API endpoints available in each region, see the **“API base URLs”** section of the **Overview** chapter. Throughout this documentation, we simply refer to them as the **“API base URL”**; when configuring tools, choose the URL appropriate for your region as described there.
+
 ## Creating a new API key
 
 1. Sign in to the console at `https://tokenfor.me`.
@@ -40,7 +44,7 @@ Model routes control which providers and models a given key can access.
    - Enable / disable it for this key;
    - Select which specific models are allowed (e.g. `gpt-4`, `claude-3-opus`, `gemini-1.5-pro`, etc.);
    - Configure related options (priority, rate limits, etc.), if available.
-4. Save the configuration. The key can now access the selected models via `https://api.tokenfor.me`.
+4. Save the configuration. The key can now access the selected models via the configured API base URL (see "API base URLs" under "API Keys").
 
 For most users, it is enough to:
 
@@ -66,4 +70,4 @@ On the **API / Keys** page, you can:
   - Disable or delete keys that are no longer needed;
   - Immediately revoke any key that might have been leaked.
 
-Once configured, you can use `https://api.tokenfor.me` and the corresponding API key in your agents/tools to access the enabled models.
+Once configured, you can use the configured API base URL (see "API base URLs" under "API Keys") and the corresponding API key in your agents/tools to access the enabled models.

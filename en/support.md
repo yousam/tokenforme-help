@@ -6,7 +6,9 @@ outline: deep
 
 # Support & Customer Service
 
-This chapter explains the support channels provided by tokenfor.me, including 7×24 customer service and dedicated options for individual and enterprise users.
+This chapter explains the support channels provided by tokenfor.me, including 24/7 customer service and dedicated options for individual and enterprise users.
+
+> For a summary of all contact channels, see the **“Contact information”** section in the **Overview** chapter. This page does not repeat the concrete account details.
 
 ## Service commitment
 
@@ -16,10 +18,7 @@ This chapter explains the support channels provided by tokenfor.me, including 7�
 
 ## Support for individual customers
 
-Individual users can contact support for issues such as failed calls, configuration problems, top-up questions, and more.
-
-- QQ: `3928789892`
-- WeChat: `zzbar2025`
+Individual users can contact support (see **Overview – Contact information**) for issues such as failed calls, configuration problems, top-up questions, and more.
 
 Through these channels, you can:
 
@@ -32,10 +31,10 @@ Through these channels, you can:
 For group and enterprise customers, tokenfor.me provides more tailored support.
 
 1. **Top-up and billing communication**
-   - Email: `bill@tokenfor.me`
+   - See **Overview – Contact information** for the enterprise email channel.
    - Use this channel to:
-     - Discuss enterprise top-up and settlement plans;
-     - Negotiate contracts, invoices, and payment terms;
+     - Discuss enterprise top-up and settlement plans；
+     - Negotiate contracts, invoices, and payment terms；
      - Get pricing for large-scale or long-term usage.
 
 2. **VIP dedicated service groups**

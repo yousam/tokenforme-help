@@ -27,10 +27,10 @@ This is not recommended.
 
 Check the following in order:
 
-1. Make sure the Base URL is exactly `https://api.tokenfor.me`.
+1. Make sure the Base URL matches the endpoint described in the "API base URLs" section under "API Keys".
 2. Verify that the API key is copied correctly (no extra spaces, no missing characters).
 3. Confirm the key is **enabled** and has not been deleted.
-4. Check your network environment to ensure `https://api.tokenfor.me` is reachable.
+4. Check your network environment to ensure the configured API base URL (see "API base URLs" under "API Keys") is reachable.
 
 If the problem persists, capture the error message and contact support.
 
@@ -53,11 +53,10 @@ Costs are based on the underlying providers' pricing rules, aggregated through t
 ### How do I top up?
 
 - **Individual customers**:
-  - WeChat: `zzbar2025`
-  - QQ: `3928789892`
+  - See **Overview – Contact information** for the latest WeChat and QQ channels.
   - Use these channels to learn about current packages, discounts, and top-up steps.
 - **Group / Enterprise customers**:
-  - Email: `bill@tokenfor.me`
+  - See **Overview – Contact information** for the enterprise email channel.
   - Use this email to discuss top-up, settlement, and contract details.
 
 ### Are there discounts or promotions?

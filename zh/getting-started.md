@@ -38,14 +38,14 @@ outline: deep
 
 以通用配置方式为例，绝大多数支持 OpenAI/Anthropic 风格 API 的智能体，配置方式类似：
 
-- 将 Base URL / Endpoint 设置为：`https://api.tokenfor.me`（OpenAI/Anthropic 通常使用 `/v1` 路径，Gemini 使用 `/v1beta`）
+- 按照「API 密钥」章节中「API 地址」小节的说明，设置 API 地址（Base URL），为所在区域选择正确的调用域名（例如默认地区可参考该小节示例，并根据需要补上 `/v1` 或 `/v1beta` 路径）
 - 将 API Key / Token 设置为：你刚刚在控制台创建的 Key（一个 Key 绑定一个供应商分组）
 
 以下是几个常见工具的示意说明（后续「与智能体集成」章节会给出更详细示例）：
 
 - Codex：在配置文件或启动参数中指定 Base URL 和 API Key。
-- Claude Code CLI：在配置文件或环境变量中填写 `https://api.tokenfor.me` 与 Key。
-- OpenClaw、Antigravity、Qoder、Sursor：在各自的设置界面或配置文件中，将原本指向 OpenAI/Anthropic 的地址替换为 `https://api.tokenfor.me`，并使用 tokenfor.me 提供的 Key。
+- Claude Code CLI：在配置文件或环境变量中填写「API 密钥」章节中「API 地址」小节配置的域名与对应 Key。
+- OpenClaw、Antigravity、Qoder、Sursor：在各自的设置界面或配置文件中，将原本指向 OpenAI/Anthropic 的地址替换为「API 密钥」章节中「API 地址」小节配置的域名，并使用 tokenfor.me 提供的 Key。
 
 ## 第四步：发送一次测试请求
 
@@ -55,4 +55,4 @@ outline: deep
    - 英文：`Hello, is tokenfor.me working?`
 3. 如果配置正确，你应该能收到模型的正常回复。
 
-若测试失败，可参考「故障排查」章节，检查 Base URL、API Key、网络环境等常见问题。
+若测试失败，可参考「故障排查」章节，检查 API 地址（Base URL）、API Key、网络环境等常见问题。

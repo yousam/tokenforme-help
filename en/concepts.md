@@ -12,7 +12,7 @@ This chapter explains, in practical terms, the core concepts in tokenfor.me that
 
 tokenfor.me positions itself as a **High-quality Multi-LLM API Gateway**:
 
-- A single endpoint (`https://api.tokenfor.me`) to access multiple AI vendors;
+- A single endpoint (see the "API base URLs" section under "API Keys") to access multiple AI vendors;
 - Unified authentication, billing, and usage statistics;
 - Hides vendor-specific differences and reduces integration overhead.
 
@@ -54,7 +54,7 @@ Model routing is how tokenfor.me connects you to different AI vendors:
 
 ## Usage and Billing
 
-- Every call made through `https://api.tokenfor.me` is recorded;
+- Every call made through the configured API base URL is recorded (see "API base URLs" under "API Keys" for details);
 - The console provides usage and billing views so you can see:
   - Total call counts / tokens / estimated cost;
   - Breakdowns by model and by API key.

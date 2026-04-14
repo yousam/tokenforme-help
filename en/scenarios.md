@@ -21,7 +21,7 @@ This chapter walks through several typical ways individual and enterprise users 
 1. In the tokenfor.me console, create a personal key, e.g. `personal-dev`.
 2. Enable your preferred AI vendors in the model routes (OpenAI, Anthropic, Gemini, etc.).
 3. In all your tools (Codex, Claude Code CLI, OpenClaw, Qoder, etc.):
-   - Set the Base URL to `https://api.tokenfor.me`.
+   - Set the Base URL according to the "API base URLs" section under "API Keys" for your region.
    - Set the API key to `personal-dev`.
 4. Use the **Usage** page to see aggregated usage and estimate your monthly cost.
 
@@ -41,7 +41,7 @@ This chapter walks through several typical ways individual and enterprise users 
    - `member-alice`
    - `member-bob`
 2. Configure model routes and (if available) per-key limits.
-3. Distribute the corresponding keys to team members and tell them to use `https://api.tokenfor.me`.
+3. Distribute the corresponding keys to team members and tell them to use the API base URL configured as described under "API base URLs".
 4. Regularly review **Usage** and **Billing** to check which keys drive usage and cost.
 5. Adjust permissions, limits, or routing strategies based on your findings.
 
@@ -59,7 +59,7 @@ This chapter walks through several typical ways individual and enterprise users 
 2. Have your internal platform/operations team:
    - Create keys for different lines of business or systems;
    - Configure higher-stability routes and specific model strategies for mission-critical workloads.
-3. Configure each internal system (OpenClaw instances, internal bots, CI/CD scripts, etc.) to use `https://api.tokenfor.me` and the appropriate key.
+3. Configure each internal system (OpenClaw instances, internal bots, CI/CD scripts, etc.) to use the API base URL described under "API base URLs" and the appropriate key.
 4. Regularly export usage and billing data for integration with your internal finance systems.
 5. Use enterprise support channels and VIP groups for faster troubleshooting and best-practice guidance.
 
@@ -74,7 +74,7 @@ This chapter walks through several typical ways individual and enterprise users 
 
 1. Create an event-specific key, e.g. `event-2026-hackathon`.
 2. Provide participants with simple connection instructions:
-   - Base URL: `https://api.tokenfor.me`
+   - Base URL: see the "API base URLs" section under "API Keys" for the appropriate endpoint.
    - API Key: the event key (optionally with quotas or time limits).
 3. Monitor usage in real time via the **Usage** page.
 4. Disable or delete the event key once the event is over.
