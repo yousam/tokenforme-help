@@ -1,6 +1,6 @@
 {
   "name": "tokenforme-help",
-  "version": "1.22.0”,
+  "version": "1.23.0",
   "scripts": {
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
