@@ -29,7 +29,7 @@ tokenfor.me 是一款面向企业和个人开发者的多模型 API 网关（Hig
 
 - 客服QQ：`3928789892`
 - 客服Wechat：`zzbar2025`
-- 大客户Email：参考「概览-联系方式」章节中的「大客户Email」
+- 大客户Email：`bill@tokenfor.me`
 
 ## 适用人群
 

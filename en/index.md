@@ -29,7 +29,7 @@ For technical support, after-sales service, or top-up/billing questions, you can
 
 - Support QQ: `3928789892`
 - Support WeChat: `zzbar2025`
-- Enterprise email: see the "Contact information" section ("Enterprise email") in the "Overview" chapter
+- Enterprise email: `bill@tokenfor.me`
 
 ## Who is it for?
 
