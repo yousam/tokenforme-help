@@ -25,7 +25,7 @@ Unless otherwise noted, any place that needs to mention a concrete endpoint uses
 
 ## Contact information
 
-For technical support, after-sales service, or top-up/billing questions, you can reach us via the following channels (see the **Support & Customer Service** chapter for details):
+For technical support, pre-sales inquiries, after-sales service, or top-up/billing questions, please contact us through the following channels.
 
 - Support QQ: `3928789892`
 - Support WeChat: `zzbar2025`
