@@ -12,11 +12,11 @@ outline: deep
 
 - 一台可以正常联网的电脑。
 - 推荐浏览器：Chrome / Edge / Firefox / Safari 等现代浏览器。
-- 一个可以接收邮件或短信的账号，用于注册 tokenfor.me。
+- 一个可以接收邮件或短信的账号，用于注册 「站点地址」。
 
 ## 第一步：注册并登录控制台
 
-1. 打开浏览器访问：`https://tokenfor.me`。
+1. 打开浏览器访问：`「站点地址」`。
 2. 按页面提示完成注册流程（填写邮箱、设置密码等）。
 3. 注册成功后，使用你的账号登录控制台。
 
@@ -34,25 +34,25 @@ outline: deep
 > - 个人使用时，可以为自己创建一个专用 Key；
 > - 团队协作时，可以为不同项目或成员创建不同 Key，方便后续统计与权限控制。
 
-## 第三步：在智能体中配置 tokenfor.me
+## 第三步：在智能体/工具中配置「API BaseURL」与 API Key
 
-以通用配置方式为例，绝大多数支持 OpenAI/Anthropic 风格 API 的智能体，配置方式类似：
+以通用配置方式为例，绝大多数支持 OpenAI/Anthropic 风格 API 的智能体或客户端，配置方式类似：
 
-- 按照「API 密钥」章节中「API 地址」小节的说明，设置 API 地址（Base URL），为所在区域选择正确的调用域名（例如默认地区可参考该小节示例，并根据需要补上 `/v1` 或 `/v1beta` 路径）
+- 按照「API 密钥」章节中「API BaseURL」小节的说明，设置 API BaseURL，为所在区域选择正确的调用域名（例如默认地区可参考该小节示例，并根据需要补上 `/v1` 或 `/v1beta` 路径）
 - 将 API Key / Token 设置为：你刚刚在控制台创建的 Key（一个 Key 绑定一个供应商分组）
 
 以下是几个常见工具的示意说明（后续「与智能体集成」章节会给出更详细示例）：
 
 - Codex：在配置文件或启动参数中指定 Base URL 和 API Key。
-- Claude Code CLI：在配置文件或环境变量中填写「API 密钥」章节中「API 地址」小节配置的域名与对应 Key。
-- OpenClaw、Antigravity、Qoder、Sursor：在各自的设置界面或配置文件中，将原本指向 OpenAI/Anthropic 的地址替换为「API 密钥」章节中「API 地址」小节配置的域名，并使用 tokenfor.me 提供的 Key。
+- Claude Code CLI：在配置文件或环境变量中填写「API 密钥」章节中「API BaseURL」小节配置的域名与对应 Key。
+- OpenClaw、Antigravity、Qoder、Sursor：在各自的设置界面或配置文件中，将原本指向 OpenAI/Anthropic 的地址替换为「API 密钥」章节中「API BaseURL」小节配置的域名，并使用你在控制台创建的 API Key。
 
 ## 第四步：发送一次测试请求
 
 1. 在你配置好的智能体或客户端中，选择任意一个大模型（例如与 OpenAI GPT-4 兼容的模型）。
 2. 发送一条简单的测试消息，例如：
-   - 中文：`你好，测试一下 tokenfor.me 是否可用？`
-   - 英文：`Hello, is tokenfor.me working?`
+   - 中文：`你好，测试一下 「站点地址」 是否可用？`
+   - 英文：`Hello, is 「站点地址」 working?`
 3. 如果配置正确，你应该能收到模型的正常回复。
 
-若测试失败，可参考「故障排查」章节，检查 API 地址（Base URL）、API Key、网络环境等常见问题。
+若测试失败，可参考「故障排查」章节，检查 API BaseURL、API Key、网络环境等常见问题。

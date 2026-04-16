@@ -6,27 +6,27 @@ outline: deep
 
 # Troubleshooting
 
-This chapter lists common error symptoms and step-by-step checks you can perform before contacting support.
+This chapter lists common issues and recommended troubleshooting steps when using the **Site URL**. Before contacting support, go through the checklist below.
 
-## Quick checklist
+## Quick self-check
 
-When something goes wrong, first verify the following:
+When something goes wrong, first verify:
 
-1. **Is the Base URL correct?**
-   - See the "API base URLs" section in the "Overview" chapter and verify that your client is using the correct endpoint for your region.
-2. **Is your API key valid?**
-   - Did you copy it completely, with no extra spaces or missing characters?
-   - Is the key still enabled and not deleted in the console?
-3. **Is your network environment OK?**
-   - Can your machine reach the Internet normally?
-   - Is there any proxy, firewall, or corporate policy blocking access?
+1. **Is the API Base URL correct?**
+   - See the “API Base URL” section in the “Overview” chapter and confirm you are using the correct regional endpoint.
+2. **Is the API key valid?**
+   - Was it copied in full? Any extra whitespace or missing characters?
+   - Is the key still enabled and not deleted?
+3. **Is the network environment healthy?**
+   - Can the machine access the internet normally?
+   - Are there proxy settings, firewalls, or corporate network policies that may block access?
 4. **Is the model name correct?**
-   - Is the model enabled in your tokenfor.me model routes?
-   - Are you using the correct identifier?
+   - Is the model enabled in the console’s model routing configuration?
+   - Are you using the correct model identifier?
 
-## Common errors and fixes
+## Common errors and solutions
 
-### 1. Authentication failures (401 / 403)
+### 1) Authentication failures (401 / 403)
 
 **Typical messages:**
 
@@ -34,68 +34,68 @@ When something goes wrong, first verify the following:
 - `Invalid API key`
 - `Permission denied`
 
-**How to debug:**
+**Steps:**
 
-1. Verify that the Base URL matches the value described in the "API base URLs" section in the "Overview" chapter.
-2. In the **API / Keys** section of the console, check:
-   - The key is enabled;
-   - It has not expired or been disabled by an admin.
-3. Copy the key again from the console and paste it into your client to avoid typos.
-4. If you suspect a leak, delete the old key and create a new one.
+1. Confirm the API Base URL is set according to the “API Base URL” section in the “API Keys” chapter.
+2. In the console (**API Management / Keys**), check whether the key:
+   - is enabled;
+   - has expired or was disabled by an administrator.
+3. Copy the key again and paste it into your client to avoid typing errors.
+4. If you suspect a leak, delete the old key, create a new one, and update all configurations.
 
-### 2. Connection failures / timeouts
+### 2) Connection failures / timeouts
 
 **Typical messages:**
 
 - `Connection timed out`
 - `Failed to connect to host`
 
-**How to debug:**
+**Steps:**
 
-1. Try opening the API base URL you configured (see the "API base URLs" section in the "Overview" chapter) in a browser to see if it is reachable.
-2. Check local or server-side proxy settings and firewall rules.
-3. In corporate environments, verify that Internet access to external APIs is allowed.
-4. Test from another network (for example, a mobile hotspot) to rule out local network issues.
+1. Try opening the configured API Base URL in a browser (see the “API Base URL” section in the “Overview” chapter). If the page responds, basic connectivity is likely fine.
+2. Check local or server proxy settings and firewall rules.
+3. For corporate networks, confirm whether outbound internet access is restricted.
+4. Test from a different network (for example, mobile hotspot) to rule out local network problems.
 
-### 3. Model does not exist or is unsupported
+### 3) Model not found / unsupported
 
 **Typical messages:**
 
 - `Model not found`
 - `Unsupported model`
 
-**How to debug:**
+**Steps:**
 
-1. In the tokenfor.me console, confirm that:
-   - The provider (OpenAI, Anthropic, Gemini, etc.) is enabled for your key;
-   - The specific model is in the supported list.
-2. Make sure your request uses the exact model name recommended by the console or docs.
-3. If in doubt, send screenshots of your model routing configuration and a sanitized request example to support.
+1. In the console, confirm:
+   - the corresponding vendor is enabled for the key;
+   - the target model is included in the supported list.
+2. Confirm the model name in the request matches what the console recommends.
+3. If needed, capture screenshots of the console configuration and a sanitized request example and share them with support.
 
-### 4. Rate limit or quota exceeded
+### 4) Quota exceeded / rate limiting
 
 **Typical messages:**
 
 - `Rate limit exceeded`
 - `Quota exceeded`
 
-**How to debug:**
+**Steps:**
 
-1. Check the **Usage** page for unusual spikes in traffic.
-2. Confirm whether any scripts or services are calling the API very frequently.
-3. In team/enterprise setups, verify whether other members are heavily using the same key.
-4. For business-critical workloads, contact support to discuss higher quotas or better routing strategies.
+1. Review recent usage on the **Usage** page and look for abnormal spikes.
+2. Check whether any scripts are making frequent requests.
+3. In team environments, confirm whether other members are heavily using the same key.
+4. If the limit is hit due to business peaks, contact support to discuss quota increases or call optimization.
 
-## Information to collect before contacting support
+## What to collect before contacting support
 
-If the checks above do not solve the problem, prepare the following information before contacting support:
+If the issue persists, prepare the following information:
 
-- Approximate time when the issue occurred;
-- Tool or client you are using (Codex, Claude Code CLI, OpenClaw, etc.);
-- The key identifier (you can redact part of the key and/or use the key name instead of sending the full value);
+- Approximate time of the issue.
+- Tool name and version (Codex, Claude Code CLI, OpenClaw, etc.).
+- A key identifier (do not send the full key; use a note/name or a redacted fragment).
 - A sanitized request example:
-  - Model name;
-  - Key parameters (temperature, max tokens, etc.);
+  - model name;
+  - key parameters (temperature, max tokens, etc.).
 - Full error message (text or screenshot).
 
-Providing this information will greatly speed up the troubleshooting process and help you get back to normal operation faster.
+Providing this information helps improve troubleshooting efficiency.

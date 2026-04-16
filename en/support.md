@@ -1,56 +1,56 @@
 ---
 lang: en-US
-title: Support & Customer Service
+title: Support
 outline: deep
 ---
 
-# Support & Customer Service
+# Support
 
-This chapter explains the support channels provided by tokenfor.me, including 24/7 customer service and dedicated options for individual and enterprise users.
+This chapter describes the support channels and service approach provided by the **Site URL**, for both individual customers and group/enterprise customers.
 
-> For a summary of all contact channels, see the **“Contact information”** section in the **Overview** chapter. This page does not repeat the concrete account details.
+> For the full list of contact information, see the “Contact” section in the “Overview” chapter. This chapter does not repeat specific account identifiers.
 
 ## Service commitment
 
-- **24/7 online customer support** is available.
-- High-priority handling for critical incidents that impact your business.
-- For enterprise customers, more structured collaboration is available (VIP groups, regular check-ins, etc.).
+- **24/7 support availability**, with best-effort fast response.
+- Priority handling for core incidents or urgent issues that impact business.
+- Enhanced communication and collaboration mechanisms for enterprise customers (for example, dedicated support groups and regular check-ins).
 
-## Support for individual customers
+## Support channels for individual customers
 
-Individual users can contact support (see **Overview – Contact information**) for issues such as failed calls, configuration problems, top-up questions, and more.
+If you encounter issues such as request failures, configuration problems, or top-up questions, contact support through the channels listed in the “Contact” section:
 
-Through these channels, you can:
+You can use support to:
 
-- Ask technical questions (e.g. how to configure tokenfor.me in a specific tool);
-- Report errors and abnormal behavior;
-- Ask about top-up methods, discounts, and billing explanations.
+- Ask technical questions (for example, how to configure the **Site URL** in a specific tool).
+- Report errors or abnormal behavior.
+- Ask about top-up methods, promotions, and billing explanations.
 
-## Support for group / enterprise customers
+## Support channels for group / enterprise customers
 
-For group and enterprise customers, tokenfor.me provides more tailored support.
+For group or enterprise customers, the **Site URL** provides a more tailored support approach:
 
-1. **Top-up and billing communication**
-   - See **Overview – Contact information** for the enterprise email channel.
-   - Use this channel to:
-     - Discuss enterprise top-up and settlement plans；
-     - Negotiate contracts, invoices, and payment terms；
-     - Get pricing for large-scale or long-term usage.
+1. **Top-up and settlement communication**
+   - Contact: see the **Support Email** in the “Contact” section of the “Overview” chapter.
+   - Suitable for:
+     - enterprise top-up and enablement plans;
+     - contracts, invoices, and settlement discussions;
+     - pricing and discounts for bulk or long-term usage.
 
-2. **VIP dedicated service groups**
-   - Enterprise customers can work with sales to create VIP service groups.
-   - In these groups, you can:
-     - Receive faster technical support and responses;
-     - Get early notifications about product updates and changes;
-     - Discuss best practices for your specific scenarios.
+2. **VIP dedicated support group**
+   - Enterprise customers may be invited to a dedicated support group set up by sales.
+   - In the group you can receive:
+     - faster technical support and incident response;
+     - early notifications of product updates and changes;
+     - best-practice guidance for enterprise scenarios.
 
-## How to contact support effectively
+## Recommended way to report issues
 
-To help support resolve your issue quickly, we recommend including:
+To improve resolution speed, when contacting support, provide:
 
-- A clear problem description and when it started;
-- The tool/client you are using (Codex, Claude Code CLI, OpenClaw, etc.);
-- Relevant screenshots (console configuration, error messages, etc., with sensitive data redacted);
-- For billing or top-up issues, any relevant order IDs or time ranges.
+- A clear problem description (including time of occurrence and business impact).
+- The tool name (Codex, Claude Code CLI, OpenClaw, etc.).
+- Relevant screenshots (console configuration, error messages), with sensitive information redacted.
+- For billing or top-up questions, include order identifiers or timestamps when available.
 
-Both individual and enterprise users can choose the support channel that best fits their needs. tokenfor.me aims to keep your experience stable, predictable, and reliable.
+Choose the channel that best fits your case. The **Site URL** aims to keep your experience stable and smooth.

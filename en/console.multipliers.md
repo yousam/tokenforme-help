@@ -9,22 +9,22 @@ outline: deep
 ## What is a multiplier?
 
 - A multiplier is a discount coefficient relative to the standard price.
-- Example: 10% off = 0.9.
-- Different groups (channels) under a provider have different multipliers and different experience levels.
-- Multipliers are configured when your group is enabled/adjusted by sales or support.
+- Example: a 10% discount corresponds to `0.9`.
+- Different groups (channels) correspond to different multipliers and service characteristics.
+- Multipliers are configured by sales or staff during enablement or adjustment.
 
-## Why multiple groups?
+## Why are there different groups?
 
-- A single provider (OpenAI / Anthropic / Gemini) may have multiple upstream channels.
-- These channels can differ in stability, latency, and availability.
-- Groups + multipliers make pricing and experience choices transparent.
+- A single vendor (such as OpenAI, Anthropic, or Gemini) may connect through multiple channels.
+- Different channels may vary in network quality, stability, latency, and availability.
+- To make billing and experience differences transparent, the platform uses a **group + multiplier** model.
 
-## How do I see my current multiplier?
+## How do I check my current multiplier?
 
-- In the console, check the provider and group attached to your key.
-- The group's multiplier is shown by the system or set per agreement (follow what the console displays or what your contract states).
+- In the console, check the vendor and group associated with your key.
+- The corresponding multiplier is indicated by the system or staff, subject to the interface display or contractual agreement.
 
-## How to apply / adjust
+## How do I apply for or adjust a multiplier?
 
-- Contact sales or support, explain your workload and performance needs.
-- They will evaluate and assign an appropriate group and multiplier.
+- Contact sales or support and explain your usage scenario and expectations.
+- An appropriate group and multiplier can then be configured based on the evaluation.

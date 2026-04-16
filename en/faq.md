@@ -6,81 +6,82 @@ outline: deep
 
 # FAQ
 
-This chapter answers frequently asked questions from both individual and enterprise users.
+This chapter summarizes frequently asked questions from individual and enterprise users when using the **Site URL**.
 
-## Account & login
+## Account and sign-in
 
-### I forgot my password. What should I do?
+### What if I forgot my password?
 
-Use the **Forgot password** link on the sign-in page and follow the steps to reset your password via email or other supported methods. If you still have trouble, contact support using the channels listed in the **Support** chapter.
+On the sign-in page, click **Forgot password** and follow the prompts to reset your password via email or other verification methods. If the problem persists, contact support.
 
 ### Can multiple people share one account?
 
-This is not recommended.
+Not recommended.
 
-- Individual users should register their own personal accounts.
-- Teams and enterprises should create separate accounts for each member and use organization/team features to manage permissions and usage centrally.
+- For individual users, register a separate account.
+- For teams/enterprises, create separate accounts for each member and manage permissions and usage through organization/team features.
 
 ## API usage
 
-### I configured Base URL and API key but requests still fail. What now?
+### I configured the API Base URL and API key, but requests fail. What should I check?
 
-Check the following in order:
+Check in the following order:
 
-1. Make sure the Base URL matches the endpoint described in the "API base URLs" section in the "Overview" chapter.
-2. Verify that the API key is copied correctly (no extra spaces, no missing characters).
-3. Confirm the key is **enabled** and has not been deleted.
-4. Check your network environment to ensure the configured API base URL (see "API base URLs" under "API Keys") is reachable.
+1. Whether the API Base URL is configured as described in the “API Base URL” section of the “API Keys” chapter (choose the correct regional endpoint).
+2. Whether the API key was pasted correctly (no extra whitespace or missing characters).
+3. Whether the key is enabled in the console and has not been deleted.
+4. Whether your network can access the configured API Base URL.
 
-If the problem persists, capture the error message and contact support.
+If the issue persists, record the error message and timestamp and contact support.
 
-### Can one key use OpenAI, Anthropic, and Gemini at the same time?
+### Can a single key be used for OpenAI, Anthropic, and Gemini at the same time?
 
-No. **One key is bound to one provider (company) and one group.** If you need multiple providers or groups, create separate keys and configure each tool with the corresponding key.
-### How do I choose and set the model name?
+No. **One key corresponds to one group under one vendor**. If you need multiple vendors, create separate keys and configure the correct key in each tool.
 
-- In many cases, you can use familiar names like `gpt-4`, `claude-3-opus`, `gemini-1.5-pro`, etc.
-- If you see "model not found" or similar errors:
-  - Confirm that the model is enabled in your tokenfor.me console;
-  - Use the exact identifier recommended by the console or documentation.
+### How do I set the model name?
 
-## Billing & costs
+- In many tools, you can use familiar model names (for example `gpt-4`, `claude-3-opus`, `gemini-1.5-pro`).
+- If you see “model not found” errors, check:
+  - whether the model is enabled in the **Site URL** console;
+  - whether you are using the correct model identifier (use the console as the authoritative source).
 
-### How are costs calculated?
+## Billing and cost
 
-Costs are based on the underlying providers' pricing rules, aggregated through tokenfor.me. The Billing section shows the usage and estimated cost for each billing period.
+### How is cost calculated?
+
+Cost is calculated based on the billing rules of the underlying vendors. The **Site URL** shows usage and estimated costs in the console. For details, refer to console explanations and official vendor announcements.
 
 ### How do I top up?
 
-- **Individual customers**:
-  - See **Overview – Contact information** for the latest WeChat and QQ channels.
-  - Use these channels to learn about current packages, discounts, and top-up steps.
-- **Group / Enterprise customers**:
-  - See **Overview – Contact information** for the enterprise email channel.
-  - Use this email to discuss top-up, settlement, and contract details.
+- Individual customers:
+  - Contact support using the channels listed in the “Contact” section of the “Overview” chapter.
+  - Ask for the latest top-up options and any promotional guidance.
+- Enterprise customers:
+  - Contact support using the **Support Email** listed in the “Contact” section of the “Overview” chapter.
+  - Discuss top-up, settlement, and contract options.
 
 ### Are there discounts or promotions?
 
-Yes. Discounts and promotions may change over time. See "Top-up & Discounts" for the latest information, or contact the channels above.
+Yes. Promotions may change over time. Refer to the “Top-up & Rate” chapter or contact support.
 
-## Security & permissions
+## Security and permissions
 
 ### What if my API key is leaked?
 
-Immediately:
+Take the following actions immediately:
 
-1. Sign in to `https://tokenfor.me`.
-2. Disable or delete the suspected key.
-3. Create a new key and update your tools with the new key.
-4. Check the **Usage** page for any abnormal activity and contact support if needed.
+1. Sign in to the console on the **Site URL**.
+2. Disable or delete the affected key.
+3. Create a new key and update the configuration in all tools.
+4. If you suspect abnormal usage, review detailed records on the **Usage** page and contact support.
 
-### Does tokenfor.me support multi-level permissions and team management?
+### Do you support multi-level permissions and team management?
 
-If you have complex permission requirements (per department, per project, etc.), contact sales or support for the latest information on enterprise features.
+If you require multi-level permissions or advanced team management (for example, per-department or per-project access control), contact support for the latest enterprise feature information and enablement options.
 
 ## Other questions
 
-If your question is not covered here, we recommend:
+If your question is not covered here:
 
-1. Checking the **Troubleshooting** chapter first;
-2. Then contacting support using the methods in the **Support** chapter.
+1. See the “Troubleshooting” chapter.
+2. If the problem remains, contact support through the channels listed in the “Support” chapter.

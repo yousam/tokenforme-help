@@ -6,16 +6,16 @@ outline: deep
 
 # Console Overview
 
-This chapter introduces the structure of the tokenfor.me Web console so you can quickly find where to create API keys, view usage, check billing, and manage your account.
+This chapter introduces the overall structure of the **Site URL** web console and its common entry points.
 
-> Note: The exact menu names may differ slightly from what you see in production, but the overall layout is similar.
+> Note: actual menu names are subject to the live interface. The names and structure used here are illustrative and will be aligned with the live Chinese/English interface as needed.
 
-## Top bar and sidebar
+## Top navigation and sidebar
 
-After signing in to `https://tokenfor.me`, you will typically see:
+After signing in to the **Site URL**, you will typically see:
 
-- A **top bar** with account information, language switch, notifications, and sign-out.
-- A **sidebar** with the following items (current menu):
+- Top navigation bar: account information, language switcher, notifications, and sign-out.
+- Left sidebar (example menu structure):
   - Dashboard
   - API Keys
   - Usage
@@ -23,66 +23,44 @@ After signing in to `https://tokenfor.me`, you will typically see:
   - Redeem
   - Profile
 
-> In this documentation we currently focus on **Dashboard / API Keys / Usage**.
-> "My Subscriptions" and "Redeem" can be documented later if needed.
+> This help documentation currently focuses on Dashboard / API Keys / Usage.
+> Menus such as My Subscriptions and Redeem may exist, but are not covered in this document.
+
 ## Dashboard
 
-The dashboard gives you a high-level view of your account, such as:
+- Recent request trends, commonly used groups, estimated costs, and quick action entries.
 
-- Recent request counts and trends;
-- Models or routes used most often recently;
-- Estimated cost in the current billing period;
-- Shortcuts to common actions (create API key, view billing, contact support, etc.).
+## API Management / Keys
 
-It helps you quickly spot abnormal usage or check whether you are approaching any limits.
-
-## API / Keys
-
-This is one of the most important sections for normal users. Here you can:
-
-- Create new API keys;
-- View a list of existing keys (name, creation time, status, usage notes, etc.);
-- Enable / disable / delete keys;
-- Configure model routes (OpenAI, Anthropic, Gemini, etc.) for each key.
-
-Details on creating and managing keys are in the **Creating & Managing APIs** chapter.
+- Create keys, view vendors/groups, enable/disable/delete keys, and manage notes.
 
 ## Usage
 
-In the **Usage** page, you can:
-
-- View request statistics over time (daily / weekly / monthly);
-- See breakdowns by model, by API key, or by time range;
-- Export usage data (if supported).
-
-This is very useful for identifying abnormal spikes and understanding cost drivers.
+- Statistics by time range, key, group, and vendor.
+- CSV export of usage details, if available in the interface.
 
 ## Billing
 
-The **Billing** section lets you:
+- Current billing cycle, billing history, payment records, and balance/quota if applicable.
 
-- See the current billing period and its total cost;
-- Inspect detailed billing records and past invoices;
-- Review payments and balances / credit limits (if applicable).
+## Multipliers
 
-Top-up and discount information is covered in the **Usage & Billing** and **Support** chapters.
+- Explains the meaning of rate multipliers and example values.
+- Describes the relationship between different groups and experience characteristics.
+- Covers application or adjustment processes through sales/support.
+
+## Currency & Settlement
+
+- Uses U.S. dollars (`$`) as the display and settlement currency.
+- Other currencies are converted at real-time exchange rates when topping up.
+- Reconciliation data can be exported from **Usage** as CSV.
+- Input/output/cache token data is returned by the underlying vendor interfaces.
+- Settlement pricing remains aligned with official pricing.
 
 ## Account & Security
 
-In **Account & Security**, you can:
+- Password, security settings, sign-in history, and two-factor authentication if available.
 
-- Change your password and update email / phone;
-- Enable or disable two-factor authentication (if available);
-- Review recent login activity and security alerts.
+## Help & Support
 
-We recommend reviewing security settings regularly.
-
-## Support / Help
-
-This section typically provides:
-
-- Links to documentation (including this guide);
-- Contact channels for support or tickets;
-- FAQ, announcements, and change logs.
-
-If you run into issues while using tokenfor.me, first check the docs and FAQ, then reach out via the support channels if needed.
+- Documentation, customer support, after-sales service, announcements, and change notices.

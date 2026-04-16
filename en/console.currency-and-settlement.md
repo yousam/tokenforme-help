@@ -1,31 +1,30 @@
 ---
 lang: en-US
-title: Currency & Settlement
+title: Currency and Settlement
 outline: deep
 ---
 
-# Currency & Settlement
+# Currency and Settlement
 
 ## Settlement currency
 
-- The system uses **USD ($)** for display and settlement.
-- Other currencies are converted at real-time FX rates during top-up.
-- Billing and charges should follow what is shown/exported in the console.
+- The system uses **U.S. dollars (`$`)** as the display and settlement currency.
+- Other currencies are converted into U.S. dollars at real-time exchange rates during top-up.
+- Billing and cost data shown in the console and exports should be treated as authoritative.
 
-## Usage and billing data source
+## Source of usage and billing data
 
-- Input/output/cache token statistics come from the underlying model providers.
-- Token prices per model follow the official prices (stay aligned with the providers).
+- Input, output, and cache token data are returned by the underlying model vendor interfaces.
+- Token pricing for each model remains aligned with official vendor pricing.
 
-## Export for reconciliation
+## Export reconciliation data
 
-- In the **Usage** page, use **Export CSV** to get detailed usage broken down by time/key/group.
-- We recommend archiving per billing cycle for finance and audit.
+- Use the **Export CSV** function on the **Usage** page to obtain detailed records split by time, key, and group.
+- It is recommended to archive these files by billing cycle for financial reconciliation and audit purposes.
 
 ## Top-up and invoices
 
-- Individuals (top-up & discounts):
-  - WeChat: `zzbar2025`
-  - QQ: `3928789892`
-- Group/Enterprise:
-  - Email: see the "Enterprise email" entry in the "Contact information" section of the "Overview" chapter (settlement, contracts, invoices)
+- For individual customers:
+  - For settlement methods, contracts, or invoice-related questions, contact support through the channels listed in the “Contact” section of the “Support” chapter.
+- For group / enterprise customers:
+  - Email: see the **Support Email** in the “Contact” section of the “Overview” chapter to discuss settlement, contracts, and invoices.

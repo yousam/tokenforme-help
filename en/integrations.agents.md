@@ -6,95 +6,98 @@ outline: deep
 
 # Integrations with Agents
 
-This chapter explains, from a normal-user perspective, how to integrate tokenfor.me into popular agents and tools. We focus on configuration patterns and concrete examples.
+This chapter explains, from a regular user’s perspective, how to integrate the **Site URL** with common agents and development tools. It covers the unified API Base URL, API key configuration, and several concrete examples.
 
-**Universal rule:**
+**Unified rules:**
 
-- Base host: see the "API base URLs" section in the "Overview" chapter
+- Base domain: see the “API Base URL” section in the “Overview” chapter.
 - Common paths:
-  - OpenAI / Anthropic compatible APIs: `/v1`
-  - Gemini compatible APIs: `/v1beta`
-- **API Key / Token**: a key created in the tokenfor.me console (one key per provider group)
+  - OpenAI / Anthropic-compatible endpoints: `/v1`
+  - Gemini-compatible endpoints: `/v1beta`
+- API key / token: the key created and copied from the **Site URL** console. One key is bound to one group of one vendor.
 
-If a tool supports OpenAI/Anthropic-style APIs, it can usually work with tokenfor.me by changing the base URL and key.
+As long as a tool supports OpenAI/Anthropic-style APIs, it can usually be integrated with the **Site URL** by changing the API Base URL and key.
 
 <a id="generic-http-template"></a>
 ## Generic HTTP template
 
-Most HTTP-based LLM clients follow a similar pattern:
+Most model clients that support HTTP calls follow a similar configuration pattern:
+
+- Example request:
 
 ```http
-POST <API_BASE_URL>/v1/chat/completions  # see the "API base URLs" section in the "Overview" chapter for the actual endpoint
-Authorization: Bearer <YOUR_API_KEY>
+POST <API Base URL>/v1/chat/completions  (where <API Base URL> is described in the “API Base URL” section of the “Overview” chapter)
+Authorization: Bearer <Your_API_Key>
 Content-Type: application/json
 
 {
-  "model": "gpt-4",  // model name must match what tokenfor.me supports
+  "model": "gpt-4",        // Use a model name supported by the console
   "messages": [
-    { "role": "user", "content": "Hello, testing tokenfor.me." }
+    { "role": "user", "content": "Hello, please test whether <Site URL> is working." }
   ]
 }
 ```
 
-The following sections show how this maps to specific tools.
+The configuration examples below follow the same structure.
 
 <a id="codex-example"></a>
-## Codex example
+## Using the Site URL with Codex (example)
 
-> Example only – exact configuration may differ in your Codex version.
+> The following is an illustrative example. Use the current Codex documentation as the authoritative reference for the exact configuration method.
 
-Assume Codex reads configuration from a `config.json` file:
+Assume Codex supports specifying the API Base URL and key through a `config.json` file:
 
 ```json
 {
-  "apiBase": "<API_BASE_URL>",  // see the "API base URLs" section in the "Overview" chapter for the actual endpoint
-  "apiKey": "YOUR_API_KEY",
+  "apiBase": "<API Base URL>",  // See the “API Base URL” section in the “Overview” chapter
+  "apiKey": "Your_API_Key",
   "model": "gpt-4"
 }
 ```
 
 Steps:
 
-1. Open Codex's config file or settings UI.
-2. Change the original OpenAI `apiBase` to the endpoint described in the "API base URLs" section in the "Overview" chapter.
-3. Set `apiKey` to the key you created in tokenfor.me.
-4. Save the configuration.
-5. Start a conversation in Codex; if you receive normal model responses, integration is successful.
+1. Open the Codex configuration file or settings interface.
+2. Change the original OpenAI `apiBase` to the endpoint shown in the “API Base URL” section of the “API Keys” chapter.
+3. Set `apiKey` to the key created in the **Site URL** console.
+4. Save the configuration and start a test conversation in Codex.
+5. If the model responds normally, the integration is working.
 
 <a id="claude-code-cli-example"></a>
-## Claude Code CLI example
+## Using the Site URL with Claude Code CLI (example)
 
-Assume Claude Code CLI supports environment variables or a config file.
+Assume Claude Code CLI supports specifying the API Base URL and key through environment variables or a configuration file.
 
-- **Environment variable** example:
+- Environment variable example:
 
 ```bash
-export CLAUDE_API_BASE="<API_BASE_URL>"  # see the "API base URLs" section in the "Overview" chapter
-export CLAUDE_API_KEY="YOUR_API_KEY"
+export CLAUDE_API_BASE="<API Base URL>"  # See the “API Base URL” section in the “Overview” chapter
+export CLAUDE_API_KEY="Your_API_Key"
 ```
 
-- **Config file** example (`config.toml`):
+- Configuration file example:
 
 ```toml
-api_base = "<API_BASE_URL>"  # see the "API base URLs" section in the "Overview" chapter
-api_key  = "YOUR_API_KEY"
-model    = "claude-3-opus"  # use a model enabled in tokenfor.me
+api_base = "<API Base URL>"  # See the “API Base URL” section in the “Overview” chapter
+api_key  = "Your_API_Key"
+model    = "claude-3-opus"  # Use the actual supported model name
 ```
 
-Then, use the CLI as usual. All calls will be routed via tokenfor.me.
+Then use Claude Code CLI from the command line. Requests will be routed through the **Site URL** to the corresponding model.
 
 <a id="openclaw-examples"></a>
-## OpenClaw examples
+## Using the Site URL with OpenClaw (example)
 
-If you are already using OpenClaw, you can simply add three tokenfor.me providers (GPT, Claude, Gemini) and point their `baseUrl` to tokenfor.me, without changing your existing workflows. Configure each AI vendor with its own key.
+For OpenClaw users, add providers for the three AI vendors (GPT / Claude / Gemini) in the configuration file and point `baseUrl` to the address provided by the **Site URL**. The examples below require separate keys as needed.
 
 - GPT (OpenAI-compatible)
+
 ```json
 {
   "models": {
     "providers": {
       "tokenforme-gpt": {
-        "baseUrl": "<API_BASE_URL>/v1",  // see "API base URLs" under "API Keys" for the actual endpoint
+        "baseUrl": "<API Base URL>/v1",  // See the “API Base URL” section in the “Overview” chapter
         "apiKey": "sk-your-key",
         "models": [
           {
@@ -112,12 +115,13 @@ If you are already using OpenClaw, you can simply add three tokenfor.me provider
 ```
 
 - Claude (Anthropic-compatible)
+
 ```json
 {
   "models": {
     "providers": {
       "tokenforme-claude": {
-        "baseUrl": "<API_BASE_URL>/v1",  // see "API base URLs" under "API Keys" for the actual endpoint
+        "baseUrl": "<API Base URL>/v1",  // See the “API Base URL” section in the “Overview” chapter
         "apiKey": "sk-your-key",
         "models": [
           {
@@ -135,12 +139,13 @@ If you are already using OpenClaw, you can simply add three tokenfor.me provider
 ```
 
 - Gemini (Google Generative AI-compatible)
+
 ```json
 {
   "models": {
     "providers": {
       "tokenforme-gemini": {
-        "baseUrl": "<API_BASE_URL>/v1beta",  // see "API base URLs" under "API Keys" for the actual endpoint
+        "baseUrl": "<API Base URL>/v1beta",  // See the “API Base URL” section in the “Overview” chapter
         "apiKey": "sk-your-key",
         "api": "google-generative-ai",
         "models": [
@@ -165,29 +170,30 @@ If you are already using OpenClaw, you can simply add three tokenfor.me provider
 ```
 
 > Notes:
-> - One key per AI vendor group. The three vendors above should use three different keys.
-> - Exact field names/structure may vary with your OpenClaw version. Treat this as a reference.
+> - One key is bound to one vendor group. The three providers above should use different keys.
+> - Field names and structure depend on your local OpenClaw version. The examples are for reference only.
+
 <a id="other-tools"></a>
-## Antigravity / Qoder / Sursor examples
+## Using the Site URL with Antigravity / Qoder / Sursor (example)
 
-For these tools, the pattern is similar:
+For tools that support custom model APIs, the general process is:
 
-1. Open the settings panel for **Models** or **API**.
-2. Set the base URL or endpoint to the API base URL configured as described under "API base URLs".
-3. Paste your tokenfor.me API key into the key/token field.
-4. Select or type a model name that is enabled in tokenfor.me.
-5. Save and run a simple test message.
+1. In the tool settings, find the model or API configuration.
+2. Change the original API Base URL to the endpoint shown in the “API Base URL” section of the “API Keys” chapter.
+3. Set the API key to the key created in the **Site URL** console.
+4. Select or enter a model name that is enabled in the **Site URL**.
+5. Save the configuration and send a simple test message.
 
-If the tool provides a **Test Connection** button, use it to verify connectivity before heavy usage.
+If the tool provides a **Test Connection** button, use it first before large-scale usage.
 
 <a id="debugging-and-troubleshooting"></a>
 ## Debugging and troubleshooting
 
-- **Authentication errors**:
-  - Double-check your API key and ensure the key is enabled in the console.
-- **Connection or timeout issues**:
-  - Make sure the base URL matches the endpoint described in the "API base URLs" section in the "Overview" chapter.
-  - Check local network and proxy/firewall settings.
-- **Model not found**:
-  - Confirm the model is enabled for your key in tokenfor.me.
-  - Use the exact model identifier shown in the console or documentation.
+- If you see an authentication error:
+  - Check whether the API key is correct and whether it has been disabled or deleted.
+- If you see a connection failure or timeout:
+  - Check whether the API Base URL is the endpoint shown in the “API Base URL” section of the “API Keys” chapter.
+  - Check your local network and proxy settings.
+- If the model name is rejected:
+  - Confirm that the model is enabled in the model routing configuration of the **Site URL** console.
+  - Use the correct model identifier shown in the documentation or console, such as `gpt-4` or `claude-3-opus`.

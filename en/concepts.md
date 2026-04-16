@@ -6,70 +6,44 @@ outline: deep
 
 # Core Concepts
 
-This chapter explains, in practical terms, the core concepts in tokenfor.me that matter most to normal users, so you can better understand what you see in the console.
+This chapter explains the key concepts that matter most to regular users of the **Site URL**, helping you better understand the configuration items and usage statistics shown in the console.
 
 ## Multi-LLM API Gateway
 
-tokenfor.me positions itself as a **High-quality Multi-LLM API Gateway**:
+The core positioning of the **Site URL** is a **high-quality Multi-LLM API Gateway**:
 
-- A single endpoint (see the "API base URLs" section in the "Overview" chapter) to access multiple AI vendors;
-- Unified authentication, billing, and usage statistics;
-- Hides vendor-specific differences and reduces integration overhead.
+- Access multiple model providers through one unified domain. See the “API Base URL” section in the “Overview” chapter.
+- Use unified authentication, billing, and usage reporting.
+- Reduce repeated configuration and adaptation work by abstracting away vendor-specific differences.
 
-For normal users, you can think of it as:
+> Note: a unified domain does not mean a single key can access all vendors at the same time. See “API keys, AI vendors, and groups” below.
 
-> "Many different LLM providers, but one unified, stable gateway to access them all."
+## Account and organization
 
-## Account and Organization
+- **Account**: your personal account on the **Site URL**, used to sign in to the console, manage keys, and view billing information.
+- **Organization / team** (if available):
+  - Used for multi-user collaboration and centralized management of keys, usage, and billing.
+  - Typically used by enterprise or group customers.
 
-- **Account**: your personal login on tokenfor.me. You use it to sign into the console, manage keys, and view usage/billing.
-- **Organization / Team** (if enabled):
-  - Used for multi-user collaboration and centralized management of keys and usage;
-  - Typically used by enterprise or team customers.
+## API keys, AI vendors, and groups
 
-## API Keys / Tokens
+- On the **Site URL**, **one key corresponds to one group under one AI vendor**. For example: OpenAI → GPT Standard.
+- If you need to use other vendors such as Anthropic or Gemini, create separate keys.
+- A single vendor may provide multiple groups. Different groups represent different channel characteristics and rate multipliers.
 
-- Each API key represents a set of access permissions and quota;
-- You can create different keys for different use cases, for example:
-  - A personal development/testing key;
-  - A key dedicated to a specific project;
-  - A key dedicated to a specific team member.
-- In your client/agent, you only need to configure **Base URL** and **API Key** to use tokenfor.me.
+## Usage and billing
 
-> Important: Keep your keys secret. Do not paste them into public repositories or untrusted environments.
+- Every request sent through the API Base URL is recorded. See the “API Base URL” section in the “Overview” chapter for the actual endpoints.
+- The console provides usage statistics and billing views for:
+  - request counts / tokens / estimated cost;
+  - usage distribution across different API keys.
+- CSV export is available on the Usage page.
+- Input, output, and cache token data are returned by the underlying vendor interfaces.
+- Token prices follow the official vendor pricing.
 
-## Model Routing
+## Individual users vs. group / enterprise users
 
-Model routing is how tokenfor.me connects you to different AI vendors:
+- **Individual users** typically focus on reliable access, top-up methods, and cost control.
+- **Group / enterprise users** usually care about those items as well as team management, cost allocation, service levels, and after-sales support.
 
-- In the console, you can enable model routes per AI vendor such as:
-  - OpenAI
-  - Anthropic
-  - Gemini
-  - Other supported AI vendors
-- As a normal user, you usually only need to:
-  - Ensure the correct AI vendor group is chosen for your key;
-  - Enable the models you want in the console;
-  - Use those model names in your client.
-
-## Usage and Billing
-
-- Every call made through the configured API base URL is recorded (see the "API base URLs" section in the "Overview" chapter for details);
-- The console provides usage and billing views so you can see:
-  - Total call counts / tokens / estimated cost;
-  - Breakdowns by model and by API key.
-
-This helps both individuals and enterprises control and optimize their LLM costs.
-
-## Individual vs Enterprise Users
-
-- **Individual users** often care about:
-  - Stable access to models;
-  - How to top up;
-  - Whether costs are predictable and controllable.
-- **Enterprise / group users** care additionally about:
-  - Team-wide management of keys and usage;
-  - Cost allocation by department or project;
-  - Support and service levels (SLA).
-
-Later chapters will show how to use tokenfor.me effectively from both perspectives, with concrete console and configuration examples.
+The following chapters walk through real usage scenarios for both types of users and explain how to use the **Site URL** effectively with console examples and configuration guidance.

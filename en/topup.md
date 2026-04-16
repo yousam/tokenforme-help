@@ -1,33 +1,34 @@
 ---
 lang: en-US
-title: Top-up & Rates
+title: Top-up and Multipliers
 outline: deep
 ---
 
-# Top-up & Rates
+# Top-up and Multipliers
 
-This page centralizes top-up channels and rate/discount information for both individuals and enterprises, so you can quickly find the right way to recharge and adjust your rates.
+This page explains top-up channels and rate multipliers for individual and enterprise customers.
 
 ## Individual customers
 
-- WeChat: `zzbar2025`
-- QQ: `3928789892`
+If you need manual assistance with top-up or have large-amount top-up requirements, contact support through the channels listed in the “Contact” section of the “Support” chapter (Support QQ / Support Email).
 
-Use these channels to:
-- Learn about current top-up packages and corresponding rates (e.g. a `0.9x rate` means 10% off the standard price);
-- Get step-by-step guidance for online top-up;
-- Ask about balance, billing cycles, and related questions.
+You can use those channels to:
 
-## Group / Enterprise customers
+- learn about current top-up plans and corresponding multipliers, for example `0.9x rate`, which means a 10% discount from the standard price;
+- get instructions for online top-up;
+- ask about balance, billing cycles, and related matters.
 
-- Email: see the "Enterprise email" entry in the "Contact information" section of the "Overview" chapter
+## Group / enterprise customers
 
-Via email you can:
-- Discuss enterprise-grade top-up and settlement options;
-- Negotiate groups and rates (e.g. a group with 0.9x rate means 10% off);
-- Obtain formal documents required by finance / procurement.
+- Email: see the **Support Email** in the “Contact” section of the “Overview” chapter.
 
-> Related info:
-> - For settlement currency, reconciliation, and price consistency, see "Currency & Settlement".
-> - Each group has a unique rate representing the discount level for that group; in general, a higher rate also implies a higher quality route.
-> - For after-sales support channels, see "Support & Customer Service".
+By email, you can:
+
+- learn about enterprise top-up and settlement options;
+- discuss groups and multipliers, for example, a `0.9x rate` for a specific group;
+- obtain formal materials required for finance or procurement processes.
+
+> Notes:
+> - For settlement currency, reconciliation, and price alignment, see “Currency and Settlement”.
+> - Each group corresponds to one multiplier, which reflects the discount level of that group.
+> - For support channels and service details, see “Support”.

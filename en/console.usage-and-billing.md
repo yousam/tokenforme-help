@@ -1,40 +1,42 @@
 ---
 lang: en-US
-title: Usage & Billing
+title: Usage and Billing
 outline: deep
 ---
 
-# Usage & Billing
+# Usage and Billing
 
-This chapter explains how to view your request usage and billing information in the tokenfor.me console, and how to top up your balance.
+This chapter explains how to view request usage and estimated costs in the **Site URL** console.
 
 ## Usage
 
-In the **Usage** section, you can see how your account has been using tokenfor.me over time:
+On the **Usage** page, you can review overall account usage from multiple dimensions:
 
-- By time: daily / weekly / monthly trends;
-- By model: how usage is distributed across OpenAI, Anthropic, Gemini, etc.;
-- By key: how much each API key is used and how much it contributes to cost.
+- Time dimension: daily, weekly, and monthly request trends.
+- Model dimension: usage distribution across different models or vendors, such as OpenAI, Anthropic, and Gemini.
+- Key dimension: request counts, consumption, and cost share by API key.
 
-This helps you:
+This information helps you:
 
-- Detect abnormal spikes in traffic;
-- Understand which projects or team members generate the most usage;
-- Optimize your model and routing choices.
+- identify abnormal usage, such as unusual spikes in a short period;
+- analyze usage by project or team member;
+- support later cost optimization.
 
 ## Billing
 
-In the **Billing** section, you can:
+On the **Billing** page, you can typically:
 
-- View the current billing period and its total charges;
-- Inspect detailed billing records and historical invoices;
-- See payments, balances, and credit limits (if applicable).
+- review the current billing cycle:
+  - total consumption in the current period;
+  - paid and outstanding amounts, if applicable;
+- review billing history:
+  - usage and charges by billing cycle;
+  - payment records and invoice information, if supported.
 
-You can export billing data or share it with your finance team as needed.
+If you need more detailed financial or reimbursement data, export billing details or contact support.
 
+## Cost-control recommendations
 
-## Cost control tips
-
-- Use different keys for different environments: e.g. development / staging / production, so you can easily see where costs come from.
-- Combine usage and billing data: regularly review both to spot high-cost models and heavy-usage keys.
-- Establish internal usage guidelines: e.g. limit the use of particularly expensive models.
+- Separate environments by key: create different keys for development, testing, and production.
+- Review usage regularly: check the Usage page for abnormal peaks and high-cost model usage.
+- Define internal usage policies: for example, limit the use of certain high-cost models.
