@@ -16,7 +16,7 @@ tokenfor.me 是一款面向企业和个人开发者的多模型 API 网关（Hig
 
 ## 站点地址
 
-- 国际站：`https://api.tokenfor.me`
+- 国际站：`https://tokenfor.me`
 - CN2区：`https://cn.tokenfor.me`
 - UE1区：`https://ue1.tokenfor.me`
 

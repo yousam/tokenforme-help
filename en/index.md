@@ -16,7 +16,7 @@ With a single domain, you can access multiple AI vendors (such as OpenAI, Anthro
 
 ## Site URLs
 
-- Global site: `https://api.tokenfor.me`
+- Global site: `https://tokenfor.me`
 - CN2 region: `https://cn.tokenfor.me`
 - UE1 region: `https://ue1.tokenfor.me`
 
