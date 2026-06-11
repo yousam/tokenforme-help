@@ -48,12 +48,17 @@ This page lists current mainstream AI provider models and capabilities for looku
 
 | Model Name | Type | Key Features |
 | :--- | :--- | :--- |
-| **gemini-3.1-pro** | Deep Research Steward | Natively integrates Deep Research, one-click web-wide search and outputs 10,000-word professional reports. |
-| **gemini-3-pro** | Million-Context Agent | Supports 1M context input, parses long videos, charts, and entire codebases in seconds. |
-| **gemini-3-flash** | Low-Latency Assistant | Adapted for mobile apps, provides incredibly smooth real-time streaming multimodal interactive feedback. |
-| **gemini-2.5-pro** | Long-Document Encyclopedia| Ingests massive PDFs, possesses near-perfect "needle-in-a-haystack" precise pinpointing of tiny details. |
-| **gemini-2.5-flash-image** | Visual Capture Expert | Snaps a photo to quickly and accurately extract complex format tables or professional objects. |
-| **gemini-2.5-flash** | High-Throughput Sorter | Ultra-high concurrency at low cost, specializes in massive text classification and rapid translation of entire manuals. |
+| **gemini-2.5-pro** | **Long-Doc Encyclopedia** | Ingests massive PDFs with near-perfect "needle-in-a-haystack" precision for specific details. |
+| **gemini-2.5-flash-image** | **Visual Capture Expert** | Snap a photo to quickly and accurately extract complex tables or professional objects. |
+| **gemini-2.5-flash** | **High-Throughput Sorter** | Ultra-high concurrency and low cost, excels at massive text classification and rapid manual translation. |
+| **gemini-3-pro-image** | **Flagship Imaging Master** | "Nano Banana Pro" GA version, studio-grade precision, complex graphic design and high-fidelity product prototyping. |
+| **gemini-3.1-flash-image** | **Efficient Image Engine** | "Nano Banana 2" GA version, conversational image editing, blazing-fast generation at a mainstream price point. |
+| **gemini-3.5-flash** | **Frontier Agent Engine** | Flagship Flash for coding and multi-step agent tasks, outperforming 3.1 Pro at 4x the speed. |
+| **gemini-3.1-pro-preview** | **Deep Reasoning Brain** | 2M ultra-long context + top-tier multimodal reasoning, ideal for complex research and deep document analysis. |
+| **gemini-3-flash-preview** | **Mid-Range All-Rounder** | Balanced performance and cost, supports Computer Use, perfect for general development and prototyping. |
+| **gemini-3.1-flash-lite-preview** | **Ultimate-Value Lightweight** | Lowest price in the Gen 3 architecture, specializes in massive classification, summarization, and high-concurrency lightweight tasks. |
+| **gemini-flash-lite-latest** | **Lightweight Alias (→3.1-flash-lite)** | `-latest` alias, automatically pointing to the newest Flash-Lite GA version. |
+| **gemini-flash-latest** | **Flash Alias (→3.5-flash)** | `-latest` alias, automatically pointing to the newest Flash GA version (currently 3.5-flash). |
 
 ## Notes
 

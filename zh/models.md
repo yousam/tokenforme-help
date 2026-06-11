@@ -48,13 +48,17 @@ outline: deep
 
 | 模型名称 | 类型 | 特点描述 |
 | :--- | :--- | :--- |
-| **gemini-3.1-pro** | 深度研究管家 | 原生集成 Deep Research，一键全网检索并输出万字专业研报。 |
-| **gemini-3-pro** | 百万上下文 Agent | 支持 100 万上下文输入，秒级解析长视频、图表与全库代码。 |
-| **gemini-3-flash** | 低延时助手 | 适配移动端 App，提供极速丝滑的实时流式多模态交互反馈。 |
 | **gemini-2.5-pro** | 长文档百科 | 吞吐海量 PDF，拥有近乎完美的“大海捞针”级细节点精确定位。 |
 | **gemini-2.5-flash-image** | 视觉抓取专家 | 拍下照片即可迅速、精准提取复杂格式的表格或专业物体。 |
 | **gemini-2.5-flash** | 高吞吐分拣机 | 超高并发低成本，专攻海量文本分类与整本手册快速翻译。 |
-
+| **gemini-3-pro-image** | 旗舰影像大师 | "Nano Banana Pro" GA 版，影棚级精度，复杂平面设计与高保真产品原型。 |
+| **gemini-3.1-flash-image** | 高效出图引擎 | "Nano Banana 2" GA 版，对话式图像编辑，主流价位极速出图。 |
+| **gemini-3.5-flash** | 前沿智能体引擎 | 编码与多步智能体任务的旗舰 Flash，性能超越 3.1 Pro，速度快 4 倍。 |
+| **gemini-3.1-pro-preview** | 深度推理大脑 | 2M 超长上下文 + 顶级多模态推理，适合复杂研究与长文档深度分析。 |
+| **gemini-3-flash-preview** | 中端全能选手 | 均衡的性能与成本，支持 Computer Use，适合通用开发与原型验证。 |
+| **gemini-3.1-flash-lite-preview** | 极致性价比轻量机 | 3 系架构最低价，专攻海量分类、摘要与高并发轻量任务。 |
+| **gemini-flash-lite-latest** | 轻量别名（→3.1-flash-lite） | `-latest` 别名，自动指向最新 Flash-Lite GA 版本。 |
+| **gemini-flash-latest** | Flash 别名（→3.5-flash） | `-latest` 别名，自动指向最新 Flash GA 版本（当前为 3.5-flash）。 |
 
 ## 说明
 
