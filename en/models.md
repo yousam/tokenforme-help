@@ -24,9 +24,7 @@ This page lists current mainstream AI provider models and capabilities for looku
 | :--- | :--- | :--- |
 | **gpt-5.5** | Multimodal Flagship | Million-level context, excels at complex long texts and multi-app tool calling. | 
 | **gpt-5.4** | Strong Interactive Assistant | Millisecond native audio/video streaming calls, perfectly recognizes tone and emotion changes. |
-| **gpt-5.4-mini** | Lightweight Efficiency Tool | `1.4s` blazing-fast response, ultra-low cost for daily interaction and content summarization. |
-| **gpt-5.3-codex** | Architecture-Level Dev | Autonomously reads entire codebases, completes cross-file refactoring and deep vulnerability fixes. |  
-| **gpt-5.2** | Office All-Rounder | Excels at multi-language cross-border communication, proposal writing, and daily spreadsheet processing. | 
+| **gpt-5.4-mini** | Lightweight Efficiency Tool | `1.4s` blazing-fast response, ultra-low cost for daily interaction and content summarization. | 
 | **gpt-image-2** | High-Precision Vision Hub | Excels at generating high-fidelity images and deeply parsing complex physics and scientific visual data. | 
 
 ---
@@ -36,6 +34,7 @@ This page lists current mainstream AI provider models and capabilities for looku
 
 | Model Name | Type | Key Features |
 | :--- | :--- | :--- |
+| **claude-fable-5** | Long-Horizon Agent | Excels in multi-day asynchronous tasks with autonomous self-correction and multi-agent collaboration. |
 | **claude-opus-4-8** | Peak Agent | Industry dominance in reasoning, long codebase architecture, and multi-step fully automated Agents. |
 | **claude-opus-4-7** | Creative Long-Text Master | Natural and elegant writing style, strong rhythm, without mechanical feel or formatted traces. |
 | **claude-opus-4-6** | Rigorous Researcher | Extremely low hallucinations, focuses on dismantling large volumes and providing highly precise citations. | 

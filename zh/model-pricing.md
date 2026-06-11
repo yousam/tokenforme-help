@@ -42,15 +42,14 @@ outline: deep
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | gpt-5.5 | chat | 1050K / 128K | $5.00 | $30.00 | $0.50 | 
 | gpt-5.4 | chat | 1050K / 128K | $2.50 | $15.00 | $0.25 |
-| gpt-5.4-mini | chat | 400K / 128K | $0.75 | $4.50 | $0.08 |
-| gpt-5.3-codex | responses | 272K / 128K | $1.75 | $14.00 | $0.18 | 
-| gpt-5.2 | chat | 272K / 128K | $1.75 | $14.00 | $0.18 | 
+| gpt-5.4-mini | chat | 400K / 128K | $0.75 | $4.50 | $0.08 | 
 | gpt-image-2 | image_generation | - / - | $5.00 | $10.00 | $1.25 |
 
 ## Anthropic（Claude 系列）
 
 | Model Name | Mode / Operating Mode | Max Input / Output Tokens | Input Price ($/1M tokens) | Output Price ($/1M tokens) | Cache Read Price ($/1M tokens) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
+| claude-fable-5 | chat | 1000K / 128K | $10.00 | $50.00 | $1.00 | 
 | claude-opus-4-8 | chat | 1000K / 128K | $5.00 | $25.00 | $0.50 | 
 | claude-opus-4-7 | chat | 1000K / 128K | $5.00 | $25.00 | $0.50 | 
 | claude-opus-4-6 | chat | 1000K / 128K | $5.00 | $25.00 | $0.50 |
