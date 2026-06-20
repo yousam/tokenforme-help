@@ -38,7 +38,7 @@ This page lists current mainstream AI provider models and capabilities for looku
 | **claude-opus-4-7** | Creative Long-Text Master |
 | **claude-opus-4-6** | Rigorous Researcher |
 | **claude-sonnet-4-6** | All-Round Dev Mainstay |
-| **claude-haiku-4-5** | Blazing-Fast Triage Tool |
+| **claude-haiku-4-5-20251001** | Blazing-Fast Triage Tool |
 
 ---
 

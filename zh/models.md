@@ -38,7 +38,7 @@ outline: deep
 | **claude-opus-4-7** | 创意长文大师 |
 | **claude-opus-4-6** | 严谨研究员 | 
 | **claude-sonnet-4-6** | 全能开发主力 | 
-| **claude-haiku-4-5** | 极速分拣利器 | 
+| **claude-haiku-4-5-20251001** | 极速分拣利器 | 
 
 ---
 
