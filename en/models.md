@@ -20,8 +20,8 @@ This page lists current mainstream AI provider models and capabilities for looku
 ### OpenAI (GPT Series)
 *Focuses on deep reasoning and native multimodal capabilities, evolving towards strong logic and complex system coordination.*
 
-| Model Name | Type | Key Features |
-| :--- | :--- | :--- |
+| Model Name | Features | 
+| :--- | :--- | 
 | **gpt-5.5** | Multimodal Flagship |
 | **gpt-5.4** | Strong Interactive Assistant |
 | **gpt-5.4-mini** | Lightweight Efficiency Tool |
@@ -32,8 +32,8 @@ This page lists current mainstream AI provider models and capabilities for looku
 ### Anthropic (Claude 4 Family)
 *Focuses on long-text fidelity, elegant code architecture, and highly human-like natural writing style.*
 
-| Model Name | Type | Key Features |
-| :--- | :--- | :--- | 
+| Model Name | Features |
+| :--- | :--- | 
 | **claude-opus-4-8** | Peak Agent |
 | **claude-opus-4-7** | Creative Long-Text Master |
 | **claude-opus-4-6** | Rigorous Researcher |
@@ -45,8 +45,8 @@ This page lists current mainstream AI provider models and capabilities for looku
 ### Google (Gemini 3 Series)
 *Focuses on native ultra-large context throughput, deep web search (Deep Research), and Google ecosystem integration.*
 
-| Model Name | Type | Key Features |
-| :--- | :--- | :--- |
+| Model Name | Features | 
+| :--- | :--- | 
 | **gemini-3.5-flash** | Cutting-Edge Agent Engine |
 | **gemini-3.1-flash-image** | Efficient Vision Engine |
 | **gemini-3.1-pro-preview** | Deep Reasoning Brain |
