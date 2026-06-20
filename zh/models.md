@@ -22,10 +22,10 @@ outline: deep
 
 | 模型名称 | 类型 | 特点描述 |
 | :--- | :--- | :--- |
-| **gpt-5.5** | 多模态主力 | 百万级上下文，擅长复杂长文本及多应用级工具调用。 | 
-| **gpt-5.4** | 强交互助理 | 毫秒级原生音视频流式通话，完美识别语气与情绪变化。 |
-| **gpt-5.4-mini** | 轻量效率工具 | `1.4s` 极速响应，超低成本完成日常交互与内容提炼。 | 
-| **gpt-image-2** | 高精视觉中枢 | 擅长极速生成高保真图像，深度解析复杂物理与科研级视觉数据。 | 
+| **gpt-5.5** | 多模态主力 |
+| **gpt-5.4** | 强交互助理 | 
+| **gpt-5.4-mini** | 轻量效率工具 | 
+| **gpt-image-2** | 高精视觉中枢 | 
 
 ---
 
@@ -33,13 +33,12 @@ outline: deep
 *主打长文本忠诚度、优雅的代码架构以及极富人类质感的自然文笔。*
 
 | 模型名称 | 类型 | 特点描述 |
-| :--- | :--- | :--- |
-| **claude-fable-5** | 长程自主体 | 专攻多日长程异步任务，具备主动自检与多智能体跨阶段协作力。 |
-| **claude-opus-4-8** | 巅峰智能体 | 推理、长代码库架构与多步骤全自动 Agent 上具备行业统治力。 |
-| **claude-opus-4-7** | 创意长文大师 | 文笔自然优雅，具备极强行文节奏，毫无机械感与格式化痕迹。 |
-| **claude-opus-4-6** | 严谨研究员 | 幻觉极低，专注于大部头拆解并提供极其精准的文献引用。 | 
-| **claude-sonnet-4-6** | 全能开发主力 | 速度与智能完美平衡，熟练驾驭复杂工程开发与特定格式提取。 | 
-| **claude-haiku-4-5** | 极速分拣利器 | 毫秒级分拣海量邮件，精准秒回客服场景的基础业务咨询。 |
+| :--- | :--- | :--- | 
+| **claude-opus-4-8** | 巅峰智能体 |
+| **claude-opus-4-7** | 创意长文大师 |
+| **claude-opus-4-6** | 严谨研究员 | 
+| **claude-sonnet-4-6** | 全能开发主力 | 
+| **claude-haiku-4-5** | 极速分拣利器 | 
 
 ---
 
@@ -48,17 +47,21 @@ outline: deep
 
 | 模型名称 | 类型 | 特点描述 |
 | :--- | :--- | :--- |
-| **gemini-2.5-pro** | 长文档百科 | 吞吐海量 PDF，拥有近乎完美的“大海捞针”级细节点精确定位。 |
-| **gemini-2.5-flash-image** | 视觉抓取专家 | 拍下照片即可迅速、精准提取复杂格式的表格或专业物体。 |
-| **gemini-2.5-flash** | 高吞吐分拣机 | 超高并发低成本，专攻海量文本分类与整本手册快速翻译。 |
-| **gemini-3-pro-image** | 旗舰影像大师 | "Nano Banana Pro" GA 版，影棚级精度，复杂平面设计与高保真产品原型。 |
-| **gemini-3.1-flash-image** | 高效出图引擎 | "Nano Banana 2" GA 版，对话式图像编辑，主流价位极速出图。 |
-| **gemini-3.5-flash** | 前沿智能体引擎 | 编码与多步智能体任务的旗舰 Flash，性能超越 3.1 Pro，速度快 4 倍。 |
-| **gemini-3.1-pro-preview** | 深度推理大脑 | 2M 超长上下文 + 顶级多模态推理，适合复杂研究与长文档深度分析。 |
-| **gemini-3-flash-preview** | 中端全能选手 | 均衡的性能与成本，支持 Computer Use，适合通用开发与原型验证。 |
-| **gemini-3.1-flash-lite-preview** | 极致性价比轻量机 | 3 系架构最低价，专攻海量分类、摘要与高并发轻量任务。 |
-| **gemini-flash-lite-latest** | 轻量别名（→3.1-flash-lite） | `-latest` 别名，自动指向最新 Flash-Lite GA 版本。 |
-| **gemini-flash-latest** | Flash 别名（→3.5-flash） | `-latest` 别名，自动指向最新 Flash GA 版本（当前为 3.5-flash）。 |
+| **gemini-3.5-flash** | 前沿智能体引擎 |
+| **gemini-3.1-flash-image** | 高效视觉引擎 |
+| **gemini-3.1-pro-preview** | 深度推理大脑 |
+| **gemini-3.1-pro-preview-customtools** | 定制工具专家 |
+| **gemini-3.1-flash-lite** | 轻量敏捷终端 |
+| **gemini-3.1-flash-image-preview** | 视觉引擎尝鲜 |
+| **gemini-3-pro-preview** | 旗舰推理先锋 |
+| **gemini-3-pro-image** | 旗舰影像大师 |
+| **gemini-3-pro-image-preview** | 旗舰影像尝鲜 |
+| **gemini-3-flash-preview** | 中端全能选手 |
+| **gemini-2.5-flash-image** | 视觉抓取专家 |
+| **gemini-2.5-pro** | 长文档百科 |
+| **gemini-2.5-flash** | 高吞吐分拣机 |
+| **gemini-2.5-flash-lite** | 极致轻量小钢炮 |
+| **gemini-flash-latest** | 极速动态别名 |
 
 ## 说明
 

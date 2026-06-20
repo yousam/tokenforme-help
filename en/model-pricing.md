@@ -48,8 +48,7 @@ Usually split into three types:
 ## Anthropic (Claude Series)
 
 | Model Name | Mode / Operating Mode | Max Input / Output Tokens | Input Price ($/1M tokens) | Output Price ($/1M tokens) | Cache Read Price ($/1M tokens) |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| claude-fable-5 | chat | 1000K / 128K | $10.00 | $50.00 | $1.00 | 
+| :--- | :--- | :--- | :--- | :--- | :--- | 
 | claude-opus-4-8 | chat | 1000K / 128K | $5.00 | $25.00 | $0.50 | 
 | claude-opus-4-7 | chat | 1000K / 128K | $5.00 | $25.00 | $0.50 | 
 | claude-opus-4-6 | chat | 1000K / 128K | $5.00 | $25.00 | $0.50 |
@@ -60,16 +59,20 @@ Usually split into three types:
 
 | Model Name | Mode / Operating Mode | Max Input / Output Tokens | Input Price ($/1M tokens) | Output Price ($/1M tokens) | Cache Read Price ($/1M tokens) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| gemini-2.5-pro | chat | 1048K / 65K | $1.25 | $10.00 | $0.13 |
+| gemini-3.5-flash | chat | 1048K / 65K | $1.50 | $9.00 | $0.15 |
+| gemini-3.1-flash-image | image_generation | 65K / 32K | $0.50 | $60.00 (Image) | $0.05 |
+| gemini-3.1-pro-preview | chat | 2048K / 65K | $2.00 (≤200K) | $12.00 (≤200K) | $0.20 |
+| gemini-3.1-pro-preview-customtools | chat | 2048K / 65K | $2.00 | $12.00 | $0.20 |
+| gemini-3.1-flash-lite | chat | 1048K / 65K | $0.25 | $1.50 | $0.025 |
+| gemini-3.1-flash-image-preview | image_generation | 65K / 32K | $0.50 | $60.00 (Image) | $0.05 |
+| gemini-3-pro-preview | chat | 1048K / 65K | $2.00 | $12.00 | $0.20 |
+| gemini-3-pro-image | image_generation | 65K / 32K | $2.00 | $120.00 (Image) | $0.20 |
+| gemini-3-pro-image-preview | image_generation | 65K / 32K | $2.00 | $120.00 (Image) | $0.20 |
+| gemini-3-flash-preview | chat | 1048K / 65K | $0.50 | $3.00 | $0.05 |
 | gemini-2.5-flash-image | image_generation | 32K / 32K | $0.30 | $2.50 | $0.03 |
+| gemini-2.5-pro | chat | 2048K / 65K | $1.25 (≤200K) | $10.00 (≤200K) | $0.125 |
 | gemini-2.5-flash | chat | 1048K / 65K | $0.30 | $2.50 | $0.03 |
-| gemini-3-pro-image | image_generation | 66K / 32K | $2.00 | $12.00 | $0.20 |
-| gemini-3.1-flash-image | image_generation | 1048K / 32K | $0.25 | $1.50 | $0.03 |
-| gemini-3.5-flash | chat | 1048K / 65K | $1.50 | $9.00 | $0.15 | 
-| gemini-3.1-pro-preview | chat | 2048K / 65K | $2.00 | $12.00 | $0.20 |
-| gemini-3-flash-preview | chat | 1048K / 65K | $0.50 | $3.00 | $0.05 | 
-| gemini-3.1-flash-lite-preview |chat|1048K/65K|$0.25 | $1.50 | $0.025 | 
-| gemini-flash-lite-latest | chat | 1048K / 65K | $0.25 | $1.50 | $0.025 |
+| gemini-2.5-flash-lite | chat | 1048K / 65K | $0.10 | $0.40 | N/A |
 | gemini-flash-latest | chat | 1048K / 65K | $1.50 | $9.00 | $0.15 |
 
 ## Notes
