@@ -73,7 +73,8 @@ export default defineConfig({
           text: 'API对接',
           items: [
             { text: '查询余额API', link: '/zh/api-integration/balance' },
-            { text: '查询可用Model API', link: '/zh/api-integration/models' }
+            { text: '查询可用Model API', link: '/zh/api-integration/models' },
+            { text: '错误处理与重试', link: '/zh/api-integration/error-handling' }
           ]
         },
         {
