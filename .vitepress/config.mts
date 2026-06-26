@@ -73,8 +73,7 @@ export default defineConfig({
           text: 'API对接',
           items: [
             { text: '查询余额API', link: '/zh/api-integration/balance' },
-            { text: '查询可用Model API', link: '/zh/api-integration/models' },
-            { text: '错误处理与重试', link: '/zh/api-integration/error-handling' }
+            { text: '查询可用Model API', link: '/zh/api-integration/models' }
           ]
         },
         {
@@ -82,6 +81,7 @@ export default defineConfig({
           items: [
             { text: '常见问题 FAQ', link: '/zh/faq' },
             { text: '故障排查', link: '/zh/troubleshooting' },
+            { text: 'GPT 错误处理与重试', link: '/zh/error-handling' },
             { text: '售后与客服支持', link: '/zh/support' }
           ]
         }
@@ -144,6 +144,7 @@ export default defineConfig({
           items: [
             { text: 'FAQ', link: '/en/faq' },
             { text: 'Troubleshooting', link: '/en/troubleshooting' },
+            { text: 'GPT Error Handling & Retries', link: '/en/error-handling' },
             { text: 'Support & Customer Service', link: '/en/support' }
           ]
         }
