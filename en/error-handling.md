@@ -1,10 +1,10 @@
 ---
 lang: en-US
-title: GPT Error Handling & Retries
+title: GPT Error Handling
 outline: deep
 ---
 
-# GPT Error Handling & Retries
+# GPT Error Handling
 
 This chapter explains the unified error structure returned by the **Site URL** when a request fails, along with the recommended client-side handling. Designing your retry and alerting logic according to this guide will give you a more stable integration.
 
