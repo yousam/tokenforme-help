@@ -34,6 +34,7 @@ This page lists current mainstream AI provider models and capabilities for looku
 
 | Model Name | Features |
 | :--- | :--- | 
+| **claude-fable-5** | Flagship Narrative Agent |
 | **claude-opus-4-8** | Peak Agent |
 | **claude-opus-4-7** | Creative Long-Text Master |
 | **claude-opus-4-6** | Rigorous Researcher |

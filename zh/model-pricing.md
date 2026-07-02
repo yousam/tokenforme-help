@@ -49,6 +49,7 @@ outline: deep
 
 | Model Name | Mode / Operating Mode | Max Input / Output Tokens | Input Price ($/1M tokens) | Output Price ($/1M tokens) | Cache Read Price ($/1M tokens) |
 | :--- | :--- | :--- | :--- | :--- | :--- | 
+| claude-fable-5 | chat | 1000K / 128K | $10.00 | $50.00 | $1.00 |
 | claude-opus-4-8 | chat | 1000K / 128K | $5.00 | $25.00 | $0.50 | 
 | claude-opus-4-7 | chat | 1000K / 128K | $5.00 | $25.00 | $0.50 | 
 | claude-opus-4-6 | chat | 1000K / 128K | $5.00 | $25.00 | $0.50 |

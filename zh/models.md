@@ -34,6 +34,7 @@ outline: deep
 
 | 模型名称 | 特点 | 
 | :--- | :--- | 
+| **claude-fable-5** | 旗舰叙事智能体 |
 | **claude-opus-4-8** | 巅峰智能体 |
 | **claude-opus-4-7** | 创意长文大师 |
 | **claude-opus-4-6** | 严谨研究员 | 
